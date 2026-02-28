@@ -9,7 +9,7 @@ Packages are provided on a best-effort basis and may not be up-to-date. If you f
 
 ## Quickstart
 
-At the moment, you'll need to trust this [signing certificate](https://github.com/pl4nty/winget-extras/blob/main/index/cert.cer) for MSIX.
+At the moment, you'll need to trust this [self-signed certificate](https://github.com/pl4nty/winget-extras/blob/main/index/cert.cer) at the machine level.
 
 > [!CAUTION]
 > This has significant security concerns, so I'm not providing instructions. But it won't be necessary soon once I have access to a publicly-trusted certificate.
@@ -33,6 +33,6 @@ Try it yourself with these commands.
 
 ```sh
 git clone https://github.com/microsoft/winget-pkgs
-cd Tools
-.\SandboxTest.ps1 -Manifest ..\\..\\winget-extras\\manifests\\m\\Microsoft\\AzIPLogViewer\\1.0\\
+cd winget-pkgs\Tools
+.\SandboxTest.ps1 -Manifest ..\..\winget-extras\manifests\m\Microsoft\AzIPLogViewer\1.0\
 ```
