@@ -14,5 +14,8 @@ Installers:
   InstallerSha256: A50C89C9D254F33CC8A8E638F7CC1981A76263005FCEC102AD8C8B45626D53E0
 InstallerSuccessCodes:
 - 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
 ManifestType: installer
 ManifestVersion: 1.12.0
