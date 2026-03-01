@@ -7,6 +7,7 @@ InstallerType: exe
 InstallerSwitches:
   Silent: -s -n Display.Driver
   SilentWithProgress: -s -n Display.Driver
+  Log: -log:"<LOGPATH>"
 Installers:
 - Architecture: x64
   InstallerUrl: https://uk.download.nvidia.com/Windows/591.86/591.86-desktop-win10-win11-64bit-international-dch-whql.exe
