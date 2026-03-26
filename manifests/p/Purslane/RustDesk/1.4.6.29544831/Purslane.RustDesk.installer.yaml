@@ -25,8 +25,8 @@ Installers:
   Scope: machine
 - Architecture: x86
   InstallerType: exe
-  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86_64.exe
-  InstallerSha256: 422ce31131e6537ea4f611ebf4a4d1804f28a6f58c83aa05065071c5958f1551
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86-sciter.exe
+  InstallerSha256: 1d009aef333dc9995bd4c1a58341fecfe4399352f5ce3fdfa6c545f1c155e93b
   InstallerSwitches:
     Silent: --silent-install
     SilentWithProgress: --silent-install
