@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ModMii.ModMii
+PackageVersion: 8.0.4
+PackageLocale: en-US
+Publisher: ModMii
+PackageName: ModMii (Portable)
+PackageUrl: https://modmii.github.io
+License: Proprietary
+ShortDescription: Able to download all the files needed to modify ANY Wii, WiiU or vWii.
+Tags:
+- softmodding
+- homebrew
+- nintendowii
+- wiiu
+- wii-u
+- vwii
+- usbloadergx
+- nanddumper
+- d2x-cios-installer
+- sneek
+- bootmii
+- wadmanager
+- gamingconsoles
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

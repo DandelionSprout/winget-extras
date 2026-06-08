@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ModMii.ModMii
+PackageVersion: 8.0.4
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ModMii.exe
+  PortableCommandAlias: modmii
+- RelativeFilePath: ModMiiSkin.exe
+  PortableCommandAlias: modmiiskin
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/modmii/modmii.github.io/releases/download/8.0.4/ModMii.zip
+  InstallerSha256: 69E012D57264B73910F209C6617E2610A0D58669435606A9EFE180E88D378F77
+ManifestType: installer
+ManifestVersion: 1.12.0
