@@ -31,5 +31,8 @@ Tags:
 - nvidiadriver
 - nv_dispi.inf
 - nvhda.inf
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
