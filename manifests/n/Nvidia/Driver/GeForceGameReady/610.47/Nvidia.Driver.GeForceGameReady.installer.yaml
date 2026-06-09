@@ -18,8 +18,5 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
 ElevationRequirement: elevationRequired
-Documentations:
-- DocumentLabel: Info on parameters
-  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
 ManifestType: installer
 ManifestVersion: 1.12.0
