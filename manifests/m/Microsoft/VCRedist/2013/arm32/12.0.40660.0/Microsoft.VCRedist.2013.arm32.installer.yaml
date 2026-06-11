@@ -19,7 +19,7 @@ InstallerSuccessCodes:
 - 3010
 UpgradeBehavior: uninstallPrevious
 AppsAndFeaturesEntries:
-- DisplayName: Microsoft Visual C++ 2013 Redistributable (Arm32) - 12.0.40664
+- DisplayName: Microsoft Visual C++ 2013 Redistributable (arm) - 12.0.40664
   Publisher: Microsoft Corporation
 Installers:
 - Architecture: arm
