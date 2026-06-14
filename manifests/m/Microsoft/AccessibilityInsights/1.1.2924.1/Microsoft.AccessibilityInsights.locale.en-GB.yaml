@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AccessibilityInsights
+PackageVersion: 1.1.2924.1
+PackageLocale: en-GB
+License:    
+Tags:
+- accessibility-insights-for-windows
+- accessibilityinsightsforwindows
+- accessibility-tools
+- accessibilitytools
+- colour-contrast-analyser
+- colourcontrastanalyser
+- app-development
+- appdevelopment
+Documentations:
+- DocumentLabel: Licence (MIT)
+  DocumentUrl: https://raw.githubusercontent.com/microsoft/accessibility-insights-windows/main/license.txt
+ManifestType: locale
+ManifestVersion: 1.12.0

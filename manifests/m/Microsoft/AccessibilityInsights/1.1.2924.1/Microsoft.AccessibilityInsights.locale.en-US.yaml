@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AccessibilityInsights
+PackageVersion: 1.1.2924.1
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Accessibility Insights for Windows
+PackageUrl: https://github.com/microsoft/accessibility-insights-windows
+License: MIT
+ShortDescription: The project for Accessibility tools on the Windows platform.
+Moniker: accessibilityinsights
+Tags:
+- accessibility-insights-for-windows
+- accessibilityinsightsforwindows
+- accessibility-tools
+- accessibilitytools
+- color-contrast-analyzer
+- colorcontrastanalyzer
+- app-development
+- appdevelopment
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://accessibilityinsights.io
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
