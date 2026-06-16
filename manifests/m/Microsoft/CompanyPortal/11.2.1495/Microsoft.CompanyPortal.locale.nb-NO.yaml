@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.CompanyPortal
+PackageVersion: 11.2.1495
+PackageLocale: nb-NO
+PackageName: Firmaportal (Eldre ikke-Store-versjon)
+PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=108156
+License: Proprietær
+ShortDescription: Hjelper organisasjoner med å administrere tilgangen til firma-apper, -data og -ressurser. Firmaportal er appen som gjør at du som medarbeider i firmaet kan få tilgang til disse ressursene på en trygg måte.
+Description: |-
+  Hjelper organisasjoner med å administrere tilgangen til firma-apper, -data og -ressurser. Firmaportal er appen som gjør at du som medarbeider i firmaet kan få tilgang til disse ressursene på en trygg måte.
+
+  Bemerk at per 16. juni 2026 ligger den nyeste frittstående installereren for appen en smule etter den nyeste Microsoft Store-versjonen (11.2.1787).
+ManifestType: locale
+ManifestVersion: 1.12.0

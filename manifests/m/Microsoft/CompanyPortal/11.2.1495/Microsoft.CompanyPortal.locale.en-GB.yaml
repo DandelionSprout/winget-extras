@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.CompanyPortal
+PackageVersion: 11.2.1495
+PackageLocale: en-GB
+Publisher: Microsoft Corporation
+PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=108156
+ShortDescription: Helps organisations manage access to corporate apps, data, and resources. Company Portal is the app that lets you, as an employee of your company, securely access those resources.
+Description: |-
+  Helps organisations manage access to corporate apps, data, and resources. Company Portal is the app that lets you, as an employee of your company, securely access those resources.
+
+  Note that as of 16 June 2026, the recentmost standalone installer for the app lags a bit behind the recentmost Microsoft Store version (11.2.1787).
+ManifestType: locale
+ManifestVersion: 1.12.0
