@@ -12,7 +12,7 @@ ShortDescription: Helps organizations manage access to corporate apps, data, and
 Description: |-
   Helps organizations manage access to corporate apps, data, and resources. Company Portal is the app that lets you, as an employee of your company, securely access those resources.
 
-  Note that as of June 16, 2026, the recentmost standalone installer for the app lags a bit behind the recentmost Microsoft Store version (11.2.1787).
+  Note that as of June 16, 2026, the recentmost standalone installer for the app lags a bit behind the recentmost Microsoft Store version (11.2.1787). The homepage describes the non-Store installer as that it «is provided for those customers who cannot use Microsoft Store due to limitations».
 Tags:
 - company-portal
 - microsoft-intune-windows-company-portal
