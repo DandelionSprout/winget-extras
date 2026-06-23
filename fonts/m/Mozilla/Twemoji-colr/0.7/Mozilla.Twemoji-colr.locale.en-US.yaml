@@ -8,6 +8,7 @@ PackageName: twemoji-colr
 PackageUrl: https://github.com/mozilla/twemoji-colr
 License: Apache-2.0
 ShortDescription: A COLR/CPAL-based color OpenType font from the Twemoji collection of emoji images.
+Moniker: twemojimozilla
 Tags:
 - font
 - emoji-14.0
