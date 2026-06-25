@@ -2,6 +2,6 @@
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady.10x0
 PackageVersion: "582.53"
-DefaultLocale: en-US
+DefaultLocale: en
 ManifestType: version
 ManifestVersion: 1.12.0
