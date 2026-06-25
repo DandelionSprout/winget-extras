@@ -2,6 +2,6 @@
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: "391.35"
-DefaultLocale: en-US
+DefaultLocale: en
 ManifestType: version
 ManifestVersion: 1.12.0
