@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: umihotaru.Nishiki-teki
+PackageVersion: 4.0.4
+PackageLocale: en
+Publisher: umihotaru
+PackageName: Nishiki-teki
+PackageUrl: https://umihotaru.work
+License: Open Font License
+ShortDescription: A bold, curvy font with very wide support for languages, even more so for Japanese.
+Moniker: nishiki-teki
+Tags:
+- font
+- nishikiteki
+- truetype
+- kana-extended-b
+- japanese
+- latin-alphabet
+- greek-alphabet
+- taiwanese-hokkien-kana
+- small-kana-extension
+- ttf
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
