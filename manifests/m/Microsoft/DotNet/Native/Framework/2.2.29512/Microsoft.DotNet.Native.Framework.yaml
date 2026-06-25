@@ -2,6 +2,6 @@
 
 PackageIdentifier: Microsoft.DotNet.Native.Framework
 PackageVersion: 2.2.29512
-DefaultLocale: en-US
+DefaultLocale: en
 ManifestType: version
 ManifestVersion: 1.12.0
