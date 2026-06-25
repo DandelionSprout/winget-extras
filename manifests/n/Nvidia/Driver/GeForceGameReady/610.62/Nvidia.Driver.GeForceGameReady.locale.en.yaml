@@ -2,7 +2,7 @@
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: "610.62"
-PackageLocale: en-US
+PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver
 PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
