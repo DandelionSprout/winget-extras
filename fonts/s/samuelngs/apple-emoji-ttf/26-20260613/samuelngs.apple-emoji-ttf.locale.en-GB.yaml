@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: samuelngs.apple-emoji-ttf
+PackageVersion: 26-20260613
+PackageLocale: en-GB
+ShortDescription: Brings Apple's vibrant colour emoji to Windows and the web.
+Tags:
+- font
+- appleemojittf
+- apple-emojis
+- appleemojis
+- apple-emotes
+- appleemotes
+- apple-colour-emoji
+- applecolouremoji
+- aet
+ManifestType: locale
+ManifestVersion: 1.12.0

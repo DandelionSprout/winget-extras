@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: samuelngs.apple-emoji-ttf
+PackageVersion: 26-20260613
+ReleaseDate: 2026-06-13
+InstallerType: font
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/samuelngs/apple-emoji-ttf/releases/download/macos-26-20260613-f1fc560b/AppleColorEmoji-Windows.ttf
+  InstallerSha256: ED01E1E22E032FF08F5C9A43BA61AE72B75302ECCFF51340CD64D2B24D7D1C8D
+ManifestType: installer
+ManifestVersion: 1.12.0
