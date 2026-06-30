@@ -18,5 +18,7 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/hfg-gmuend/openmoji/releases/download/17.0.0/openmoji-font.zip
   InstallerSha256: 1DE61D8DCB38D0BEBBDD13C7057A65F5D957EAD36CE4B61BD635F84E6F3CADBA
+  UnsupportedOSArchitectures:
+  - arm
 ManifestType: installer
 ManifestVersion: 1.12.0
