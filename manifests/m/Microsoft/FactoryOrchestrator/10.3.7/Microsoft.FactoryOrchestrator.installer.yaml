@@ -24,8 +24,8 @@ Installers:
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.UI.Xaml.2.6
-  - PackageIdentifier: Microsoft.DotNet.Native.Framework
   - PackageIdentifier: Microsoft.DotNet.Native.Runtime
   - PackageIdentifier: Microsoft.VCLibs.14
+  - PackageIdentifier: Microsoft.DotNet.Native.Framework
 ManifestType: installer
 ManifestVersion: 1.12.0
