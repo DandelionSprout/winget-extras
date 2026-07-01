@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAdvancedSettings.Fonts.DevHomeTTF
+PackageVersion: "1.95"
+PackageLocale: en
+Publisher: Microsoft Corporation
+PackageName: DevHome Fluent Icons
+PackageUrl: https://github.com/microsoft/WindowsAdvancedSettings/tree/main
+License: MIT
+ShortDescription: The DevHome.ttf font file that is included with, and is created by the developers of, Windows Advanced Settings and Microsoft Dev Home.
+Moniker: devhome.ttf
+Tags:
+- devhome-fluent-icons
+- devhomefluenticons
+- windows-advanced-settings-fonts-devhome
+- windowsadvancedsettingsfontsdevhomettf
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

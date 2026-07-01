@@ -1,0 +1,12 @@
+# Created using wingetcreate 1.12.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAdvancedSettings.Fonts.DevHomeTTF
+PackageVersion: "1.95"
+InstallerType: font
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://raw.githubusercontent.com/microsoft/WindowsAdvancedSettings/refs/heads/main/src/AdvancedSettings/Assets/Fonts/DevHome.ttf
+  InstallerSha256: B547AF2D5704027B522E484CA7224135A7AE3EA54F82DE5DAF848FAA8438BAB0
+ManifestType: installer
+ManifestVersion: 1.12.0
