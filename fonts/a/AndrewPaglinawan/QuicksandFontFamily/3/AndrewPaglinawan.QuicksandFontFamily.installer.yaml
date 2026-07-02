@@ -12,7 +12,7 @@ NestedInstallerFiles:
 - RelativeFilePath: QuicksandFamily-master\fonts\statics\Quicksand-Regular.ttf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://codeload.github.com/andrew-paglinawan/QuicksandFamily/zip/refs/heads/master
+  InstallerUrl: https://codeload.github.com/andrew-paglinawan/QuicksandFamily/zip/be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7
   InstallerSha256: 75B2BF7B8E036B6DF90D86590883EE68FB173F81352B55F2A24BAB1C0BE0CC7B
 ManifestType: installer
 ManifestVersion: 1.12.0
