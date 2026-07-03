@@ -6,15 +6,13 @@ ReleaseDate: 2019-07-26
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: QuicksandFamily-master\fonts\statics\Quicksand-Bold.ttf
-- RelativeFilePath: QuicksandFamily-master\fonts\statics\Quicksand-Light.ttf
-- RelativeFilePath: QuicksandFamily-master\fonts\statics\Quicksand-Medium.ttf
-- RelativeFilePath: QuicksandFamily-master\fonts\statics\Quicksand-Regular.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Bold.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Light.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Medium.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Regular.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://codeload.github.com/andrew-paglinawan/QuicksandFamily/zip/be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7
   InstallerSha256: 4ad1e8e2fbe58287c233c92515f71a871dbf2d65aee34b24d2bd71d26dc5d997
-  UnsupportedOSArchitectures:
-  - arm
 ManifestType: installer
 ManifestVersion: 1.12.0
