@@ -8,6 +8,7 @@ PackageName: Selawik
 PackageUrl: https://github.com/microsoft/Selawik
 License: OFL-1.1
 ShortDescription: An open source replacement for Segoe UI. Was last updated in 2015.
+Moniker: selawik
 Tags:
 - font
 - selawk.ttf
