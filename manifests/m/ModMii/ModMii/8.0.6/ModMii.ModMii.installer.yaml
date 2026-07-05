@@ -1,5 +1,4 @@
 ﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
-# Is not in winget-pkgs due to: Windows Security false positive.
 
 PackageIdentifier: ModMii.ModMii
 PackageVersion: 8.0.6
