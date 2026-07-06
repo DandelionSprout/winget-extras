@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.DataCenterDriver
+PackageVersion: "596.36"
+ReleaseDate: 2026-04-28
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/tesla/596.36/596.36-data-center-tesla-desktop-win10-win11-64bit-dch-international.exe
+  InstallerSha256: 7999aa9f8e90d934034524be4d9c0cc5ca218a321ab847abe04de27db0b9e124
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ManifestType: installer
+ManifestVersion: 1.28.0

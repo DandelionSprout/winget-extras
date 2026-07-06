@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.DataCenterDriver
+PackageVersion: "596.36"
+PackageLocale: en-US
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA Data Center Driver (A/H/HGX/L/T-Series / RTX PRO)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Proprietary (Freeware)
+Copyright: © 2011-2026 NVIDIA Corporation
+ShortDescription: Drivers for certain lines of industrial, non-GeForce NVIDIA graphics cards, primarily the A-Series, H-Series, HGX-Series, L-Series, T-Series, and RTX PRO.
+Description: |-
+  Drivers for certain lines of industrial, non-GeForce NVIDIA graphics cards, primarily the A-Series, H-Series, HGX-Series, L-Series, T-Series, and RTX PRO.
+
+  As of version 596.36, the driver supports the following lineup models and up： A-Series A2, H-Series H200 NVL, HGX A100, L-Series L2, T-Series Tesla T4 (Unrelated to the car brand), RTX PRO 2000, and RTX T400
+
+  As with the regular tool for NVIDIA driver installers, the screens will flicker once when the installation is complete.
+Moniker: nvidiadriverdcd
+Tags:
+- nvidia-display-driver
+- nvidiadisplaydriver
+- nvidia-graphics-card-driver
+- nvidiagraphicscarddriver
+- nvidia-driver
+- nvidiadriver
+- datacenters
+- cuda-toolkit
+- nvidia-data-center-driver
+- nvidiadatacenterdriver
+- nvidia-l-series-driver
+- nvidia-h-series-driver
+- nvidia-a-series-driver
+- nvidia-hgx-series-driver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+Agreements:
+- Agreement: This package is untested, as no test environment was available. Please report any issues here： https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

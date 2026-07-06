@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.DataCenterDriver
+PackageVersion: "596.36"
+PackageName: NVIDIA Data Centre Driver (A/H/HGX/L/T-Series / RTX PRO)
+PackageLocale: en-GB
+Tags:
+- nvidia-display-driver
+- nvidiadisplaydriver
+- nvidia-graphics-card-driver
+- nvidiagraphicscarddriver
+- nvidia-driver
+- nvidiadriver
+- datacentres
+- cuda-toolkit
+- nvidia-data-centre-driver
+- nvidiadatacentredriver
+- nvidia-l-series-driver
+- nvidia-h-series-driver
+- nvidia-a-series-driver
+- nvidia-hgx-series-driver
+ManifestType: locale
+ManifestVersion: 1.28.0
