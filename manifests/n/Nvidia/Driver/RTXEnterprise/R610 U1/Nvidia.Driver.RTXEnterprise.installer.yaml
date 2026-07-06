@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.RTXEnterprise
+PackageVersion: "R610 U1"
+ReleaseDate: 2026-05-26
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/Quadro_Certified/610.47/610.47-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: cc26dfb1497fcaa4edeaf2fb454ceffcd9810a3fa8d246a0897ce330e3646e3b
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ManifestType: installer
+ManifestVersion: 1.28.0

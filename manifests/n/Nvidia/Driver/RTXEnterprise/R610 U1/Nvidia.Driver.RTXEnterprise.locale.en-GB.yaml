@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.RTXEnterprise
+PackageVersion: "R610 U1"
+PackageLocale: en-GB
+Publisher: NVIDIA Corporation
+ShortDescription: Drivers for certain lines of non-GeForce NVIDIA graphics cards, primarily the RTX Pro, RTX, and Quadro series of cards used in media studios and in datacentres.
+Description: |-
+  Drivers for certain lines of non-GeForce NVIDIA graphics cards, primarily the RTX Pro, RTX, and Quadro series of cards used in media studios and in datacentres.
+
+  As of version R610 U1, the driver supports the following lineup models and up： RTX PRO 500, RTX T400, and Quadro T1000.
+
+  As with the regular tool for NVIDIA driver installers, the screens will flicker once when the installation is complete.
+Tags:
+- nvidia-display-driver
+- nvidiadisplaydriver
+- nvidia-graphics-card-driver
+- nvidiagraphicscarddriver
+- nvidia-hd-audio-driver
+- nvidiahdaudiodriver
+- nvidia-driver
+- nvidiadriver
+- workstations
+- datacentres
+- nvidia-rtx-driver
+- nvidiartxdriver
+- nvidia-rtx-pro-driver
+- nvidiartxprodriver
+- nvidia-quadro-driver
+- nvidiaquadrodriver
+ManifestType: locale
+ManifestVersion: 1.28.0
