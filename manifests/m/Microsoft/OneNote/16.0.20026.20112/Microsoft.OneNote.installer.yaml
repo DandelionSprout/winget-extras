@@ -20,5 +20,11 @@ Installers:
   InstallerSwitches:
     Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/refs/heads/main/configfiles/OneNote32.xml
     SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/refs/heads/main/configfiles/OneNote32.xml
+- Architecture: arm64
+  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
+  InstallerSha256: CFE1EE36F9E5BAAC6E1777A75E3D8A4D6F1F6A7481DDADFA4513F089B20FBB86
+  InstallerSwitches:
+    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/refs/heads/main/configfiles/OneNoteARM64.xml
+    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/refs/heads/main/configfiles/OneNoteARM64.xml
 ManifestType: installer
 ManifestVersion: 1.12.0
