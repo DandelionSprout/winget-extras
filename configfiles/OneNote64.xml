@@ -1,9 +1,9 @@
-<Configuration ID="974fac0b-f3b8-4727-b2a5-18d28c0ef39d">
+<Configuration>
   <Add OfficeClientEdition="64" Channel="Current" MigrateArch="TRUE">
     <Product ID="OneNoteFreeRetail">
       <Language ID="MatchOS" />
-      <Language ID="MatchPreviousMSI"/>
     </Product>
+  </Add>
   <Updates Enabled="TRUE" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
