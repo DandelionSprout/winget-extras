@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.vcpkg
+PackageVersion: 2026-07-13
+PackageLocale: en
+Publisher: Microsoft
+PackageName: vcpkg (.exe version)
+PackageUrl: https://github.com/microsoft/vcpkg
+License: MIT
+ShortDescription: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Description: |-
+  A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+
+  Note that this Winget package has somewhat limited functionality compared to a traditional, built-from-source vcpkg setup. By default, most commands will throw the error «(...), you must define the VCPKG_ROOT environment variable to point to a cloned copy of https://github.com/Microsoft/vcpkg».
+Moniker: vcpkg
+Tags:
+- vc-pkg
+- vcpkg-tool
+- visual-cplusplus-package-manager
+- visualc++packagemanager
+- requirescmd
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
