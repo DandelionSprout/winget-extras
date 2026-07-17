@@ -9,7 +9,7 @@ NestedInstallerFiles:
 - RelativeFilePath: ScreenRuler-v.0.10.0-Portable\screenruler.exe
 ArchiveBinariesDependOnPath: true
 Installers:
-- Architecture: x86
+- Architecture: x64
   InstallerUrl: https://downloads.sourceforge.net/project/screenruler/v.0.10.0/ScreenRuler-v.0.10.0-Portable.zip
   InstallerSha256: 23FEBE720F1BD50B7528F684B666F284869177AB4253B1D2DF0E1CEAC5EAC354
 ManifestType: installer
