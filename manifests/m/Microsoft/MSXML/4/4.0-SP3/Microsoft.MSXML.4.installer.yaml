@@ -2,7 +2,7 @@
 
 PackageIdentifier: Microsoft.MSXML.4
 PackageVersion: 4.0-SP3
-ReleaseDate: 2017-05-30
+ReleaseDate: 2013-01-08 # https://support.microsoft.com/en-us/servicing/os/windows-server/2013/01/ms13-002-description-of-the-security-update-for-xml-core-services-4-0-january-8-2013
 InstallerType: exe
 InstallerSwitches:
   Silent: /quiet /qn /norestart
