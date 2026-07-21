@@ -1,4 +1,4 @@
-﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 PackageIdentifier: reaConverter.reaConverterLite
 PackageVersion: 8.0.233
 ReleaseDate: 2026-07-13
@@ -18,4 +18,4 @@ FileExtensions:
 - tif
 - webp
 ManifestType: installer
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
