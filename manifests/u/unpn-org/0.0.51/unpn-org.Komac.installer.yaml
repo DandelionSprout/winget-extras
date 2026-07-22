@@ -6,7 +6,7 @@ ReleaseDate: 2026-07-21
 InstallerType: portable
 UpgradeBehavior: install
 Commands:
-- komacanthelion
+- ath
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/unpn-org/Komac/releases/download/v0.0.51/komac-0.0.51-x86_64-pc-windows-msvc.exe
