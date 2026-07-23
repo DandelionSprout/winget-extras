@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono.NerdFont
+PackageVersion: '7.9'
+InstallerType: zip
+NestedInstallerType: font
+ReleaseDate: 2025-12-05
+Installers:
+- Architecture: neutral
+  NestedInstallerFiles:
+  - RelativeFilePath: MapleMono-NF-Bold.ttf
+  - RelativeFilePath: MapleMono-NF-BoldItalic.ttf
+  - RelativeFilePath: MapleMono-NF-ExtraBold.ttf
+  - RelativeFilePath: MapleMono-NF-ExtraBoldItalic.ttf
+  - RelativeFilePath: MapleMono-NF-ExtraLight.ttf
+  - RelativeFilePath: MapleMono-NF-ExtraLightItalic.ttf
+  - RelativeFilePath: MapleMono-NF-Italic.ttf
+  - RelativeFilePath: MapleMono-NF-Light.ttf
+  - RelativeFilePath: MapleMono-NF-LightItalic.ttf
+  - RelativeFilePath: MapleMono-NF-Medium.ttf
+  - RelativeFilePath: MapleMono-NF-MediumItalic.ttf
+  - RelativeFilePath: MapleMono-NF-Regular.ttf
+  - RelativeFilePath: MapleMono-NF-SemiBold.ttf
+  - RelativeFilePath: MapleMono-NF-SemiBoldItalic.ttf
+  - RelativeFilePath: MapleMono-NF-Thin.ttf
+  - RelativeFilePath: MapleMono-NF-ThinItalic.ttf
+  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
+  InstallerSha256: 8248D6260660BE1066B5EBE90D25131582DF8383F38DB1C284DD1F2DC9D2B46E
+ManifestType: installer
+ManifestVersion: 1.12.0

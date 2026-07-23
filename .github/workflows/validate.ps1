@@ -19,6 +19,13 @@ Install-Module powershell-yaml -Force
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
+# Disable Defender SmartScreen and MOTW
+New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Force | Out-Null
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Type DWord -Value 0
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Type String -Value 'Off' -ErrorAction SilentlyContinue
+New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
+
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
 # Moniker is required in the default locale manifest
@@ -44,29 +51,35 @@ if ($InstallerType) { $nameParts += $InstallerType }
 $artifactName = $nameParts -join '-'
 "artifact_name=$artifactName" >> $env:GITHUB_OUTPUT
 
-# Install latest pre-release WinGet version for fonts support and local manifest fixes.
-# Switch back to Repair-WinGetPackageManager and stable WinGet once 1.29.x releases and
-# PowerShell modules update.
-$assetUrl = gh api `
-    '/repos/microsoft/winget-cli/releases' `
-    --jq 'map(select(.prerelease)) | first | .assets[] | select(.name == "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle") | .browser_download_url'
+# Install latest WinGet version for fonts support
+$wingetDirectory = Join-Path $env:RUNNER_TEMP 'winget'
+New-Item $wingetDirectory -ItemType Directory -Force | Out-Null
+gh release download --repo microsoft/winget-cli `
+    --pattern 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' `
+    --pattern 'DesktopAppInstaller_Dependencies.zip' `
+    --dir $wingetDirectory
 
-$wingetBundle = Join-Path $env:RUNNER_TEMP 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
-Invoke-WebRequest -Uri $assetUrl -OutFile $wingetBundle
-Add-AppxPackage -Path $wingetBundle -ForceUpdateFromAnyVersion -ErrorAction Stop
-Write-Host "Installed latest WinGet pre-release: $(winget --version)"
+Expand-Archive "$wingetDirectory\DesktopAppInstaller_Dependencies.zip" "$wingetDirectory\dependencies"
+$dependencies = (Get-ChildItem "$wingetDirectory\dependencies\$env:RUNNER_ARCH" -File).FullName
+Add-AppxPackage "$wingetDirectory\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle" -DependencyPath $dependencies -ForceApplicationShutdown -ForceUpdateFromAnyVersion -ErrorAction Stop
+Write-Host "Installed latest WinGet: $(winget --version)"
 
-@{
+$wingetSettings = @{
     '$schema'            = 'https://aka.ms/winget-settings.schema.json'
     experimentalFeatures = @{
         fonts = $true
     }
-} | ConvertTo-Json | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
+    installBehavior      = @{
+        preferences = @{
+            architectures = @($Arch)
+        }
+    }
+}
+if ($Scope) { $wingetSettings.installBehavior.preferences.scope = $Scope }
+if ($InstallerType) { $wingetSettings.installBehavior.preferences.installerTypes = @($InstallerType) }
+$wingetSettings | ConvertTo-Json -Depth 100 | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
-
-# Add the source so declared dependencies (copied in from winget-pkgs at publish) resolve
-winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
 
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
@@ -80,20 +93,25 @@ $analyzerArgs = @(
 $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
-    "--architecture", $Arch,
     "--log", "$artifacts\$artifactName-installer.log",
     "--silent", "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
-if ($Scope) { $wingetArgs += '--scope', $Scope }
-if ($InstallerType) { $wingetArgs += '--installer-type', $InstallerType }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-$success = $installer.WaitForExit(2 * 60 * 1000)
+# 2GB+ zips like Cinebench need longer than 2 mins to extract
+$success = $installer.WaitForExit(5 * 60 * 1000)
+if ($installer.ExitCode -eq "-1978334972") {
+    # Dependency not found, so try resolving it from our source
+    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source remove --name winget
+    $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
+    $success = $installer.WaitForExit(5 * 60 * 1000)
+}
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
@@ -116,7 +134,7 @@ Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sari
 # TODO validate multiple NestedInstallerFiles
 $appPath = $null
 if ($manifest.NestedInstallerType -eq 'portable') {
-    $appPath = Split-Path $manifest.NestedInstallerFiles[0].RelativeFilePath -Leaf
+    $appPath = Split-Path ($selectedInstaller.NestedInstallerFiles ?? $manifest.NestedInstallerFiles)[0].RelativeFilePath -Leaf
 }
 elseif ($InstallerType -eq 'portable') {
     $appPath = (@($selectedInstaller.Commands) + @($manifest.Commands)) | Where-Object { $_ } | Select-Object -First 1

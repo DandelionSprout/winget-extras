@@ -86,9 +86,12 @@ if ($missingDependencies) {
     $destination = Join-Path $using:tempDependencies $path
     New-Item $destination -ItemType Directory -Force | Out-Null
 
-    $curlArguments = @('--fail', '--silent', '--show-error', '--location', '--parallel')
+    $curlArguments = @(
+      '--fail', '--silent', '--show-error', '--location', '--parallel'
+      '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
+    )
     foreach ($file in $files) {
-      $uri = "https://raw.githubusercontent.com/microsoft/winget-pkgs/refs/heads/master/$(& $encodePath "$path/$($file.name)")"
+      $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$($file.name)")"
       $curlArguments += @('--output', (Join-Path $destination $file.name), $uri)
     }
     & curl @curlArguments
@@ -109,7 +112,7 @@ $yqExpression = @'
 
 $normalizedTempManifests = $tempManifests.Replace('\', '/')
 $env:TMP_MANIFESTS = $normalizedTempManifests
-$splitExpression = 'strenv(TMP_MANIFESTS) + "/" + .PackageIdentifier + "-" + .PackageVersion + ".yaml"'
+$splitExpression = 'strenv(TMP_MANIFESTS) + "/" + .PackageIdentifier + "-" + (.PackageVersion | tostring) + ".yaml"'
 $packageGroups = @(
   Get-ChildItem manifests, fonts, $tempDependencies -Filter '*.yaml' -File -Recurse |
   Group-Object DirectoryName

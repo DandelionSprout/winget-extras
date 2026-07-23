@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono
+PackageVersion: '7.9'
+InstallerType: zip
+NestedInstallerType: font
+ReleaseDate: 2025-12-05
+Installers:
+- Architecture: neutral
+  NestedInstallerFiles:
+  - RelativeFilePath: MapleMono-Italic[wght].ttf
+  - RelativeFilePath: MapleMono[wght].ttf
+  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMono-Variable.zip
+  InstallerSha256: B9E57677CC4EC069CE178BD965D66CD14BD26C12E37D89D786FF959339BF8C93
+ManifestType: installer
+ManifestVersion: 1.12.0
