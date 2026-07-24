@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: MSI.TrueColor
 PackageVersion: 5.1.24
@@ -17,4 +17,4 @@ ProductCode: '{B4A2776D-59CD-4193-A19D-DE15CB7FC5AA}'
 AppsAndFeaturesEntries:
 - ProductCode: '{B4A2776D-59CD-4193-A19D-DE15CB7FC5AA}'
 ManifestType: installer
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
