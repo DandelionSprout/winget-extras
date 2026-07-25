@@ -21,7 +21,6 @@ Installers:
     DefaultInstallLocation: '%LocalAppData%\Programs\Microsoft VS Code'
 - Architecture: x64
   Scope: machine
-  InstallerLocale: en-US
   InstallerType: inno
   InstallerSwitches:
     Custom: /mergetasks=!runcode
