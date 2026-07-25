@@ -45,7 +45,6 @@ Installers:
   - DisplayName: Microsoft Visual Studio Code (Portable x64)
 - Architecture: arm64
   Scope: user
-  InstallerLocale: en-US
   InstallerType: inno
   InstallerSwitches:
     Custom: /mergetasks=!runcode
