@@ -8,7 +8,6 @@ ReleaseDate: 2026-07-22
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerLocale: en-US
   InstallerType: inno
   InstallerSwitches:
     Custom: /mergetasks=!runcode
