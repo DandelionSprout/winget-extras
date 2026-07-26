@@ -1,0 +1,51 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox.Portable
+PackageVersion: "153"
+ReleaseDate: 2026-07-20
+Platform:
+- Windows.Desktop
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
+- RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/153.0/win64/multi/Firefox%20Setup%20153.0.msix
+  InstallerSha256: 3107690f52f3488019f78cb0eea58c18e7114b20496003cc224a3e0faa1c4a8c
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x64)
+- Architecture: x86
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/153.0/win32/multi/Firefox%20Setup%20153.0.msix
+  InstallerSha256: 0e9fd7156ae97ba7d61039e71839dfb8f3b36c88d194aff01a51c8ed86198c0c
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x86)
+- Architecture: arm64
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/153.0/win64-aarch64/multi/Firefox%20Setup%20153.0.msix
+  InstallerSha256: 494df039d4df20f8ffeb6d6c121c36b2dd292612f06bcc83ab97912cfef0718c
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable ARM64)
+ManifestType: installer
+ManifestVersion: 1.12.0
