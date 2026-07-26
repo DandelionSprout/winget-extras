@@ -13,8 +13,8 @@ Installers:
   - RelativeFilePath: VCLibs_Redist_Packages\Microsoft.VCLibs.120.00_12.0.21005.1_x64__8wekyb3d8bbwe.appx
   InstallerSha256: bb758b8bb0b0042281561ac07ca4984092da66e58febfef8b57ab85de8b8d24e
   SignatureSha256: 4f226f17c2b1b5969e2e302501553e04a2afd3767df9b0869fb1f49997194af3
-  PackageFamily: Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x64__8wekyb3d8bbw
-- PackageFamilyName: x86
+  PackageFamilyName: Microsoft.NET.Native.Runtime.2.0_2.0.25709.0_x64__8wekyb3d8bbw
+- Architecture: x86
   InstallerUrl: https://download.microsoft.com/download/5/f/0/5f0f8404-9329-44a9-8176-ed6f7f746f25/vclibs_redist_packages.zip
   NestedInstallerFiles:
   - RelativeFilePath: VCLibs_Redist_Packages\Microsoft.VCLibs.120.00_12.0.21005.1_x86__8wekyb3d8bbwe.appx
