@@ -5,8 +5,8 @@ PackageVersion: 6.1.19
 ReleaseDate: 2022-08-29
 InstallerType: exe
 InstallerSwitches:
-  Silent: /s # According to "Universal Silent Switch Finder"
-  SilentWithProgress: /s
+  Silent: -s1
+  SilentWithProgress: -s2
 Installers:
 - Architecture: x64
   InstallerUrl: https://swcdn.apple.com/content/downloads/03/60/041-96205/61hhcnj7q5dxosc171ytixty20vuqg0r0n/AppleBcUpdate.exe
