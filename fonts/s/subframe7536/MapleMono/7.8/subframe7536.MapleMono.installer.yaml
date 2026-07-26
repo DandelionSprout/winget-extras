@@ -1,0 +1,17 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono
+PackageVersion: '7.8'
+InstallerType: zip
+NestedInstallerType: font
+ReleaseDate: 2025-10-18
+Installers:
+- Architecture: neutral
+  NestedInstallerFiles:
+  - RelativeFilePath: MapleMono-Italic[wght].ttf
+  - RelativeFilePath: MapleMono[wght].ttf
+  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.8/MapleMono-Variable.zip
+  InstallerSha256: 1589BC7175EBDB5A9F0D1207423164A1F9BAC58F09FFC9939376394F3F0E78A1
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -2,11 +2,11 @@
 
 A WinGet source for extra packages, especially ones that can't be added to [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs). They might:
 
-* [Use interactive-only installers](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Installer)
-* [Need third-party download links](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Download)
-* [Trigger false-positive malware detections](https://github.com/microsoft/winget-pkgs/issues?q=label%3ABinary-Validation-Error)
-* [Require specific hardware to test](https://github.com/microsoft/winget-pkgs/issues?q=label%3A%22Hardware%22)
-* Or otherwise be easier to add here, than upstream
+- [Use interactive-only installers](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Installer)
+- [Need third-party download links](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Download)
+- [Trigger false-positive malware detections](https://github.com/microsoft/winget-pkgs/issues?q=label%3ABinary-Validation-Error)
+- [Require specific hardware to test](https://github.com/microsoft/winget-pkgs/issues?q=label%3A%22Hardware%22)
+- Or otherwise be easier to add here, than upstream
 
 Packages are provided on a best-effort basis and may not be up-to-date. If you find a problem or want to add an app, [open an issue](https://github.com/pl4nty/winget-extras/issues/new/choose).
 
@@ -30,6 +30,7 @@ The source can be deployed to managed devices via the [`EnableAdditionalSources`
 
 In the Settings Catalog, enable **Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the value to:
 
+<!-- prettier-ignore -->
 ```json
 {"Arg":"https://winget.tplant.com.au/cache","Data":"tplant.Winget.Source_ggk937h18f62r","Explicit":false,"Identifier":"tplant.Winget.Source_ggk937h18f62r","Name":"winget-extras","TrustLevel":["Trusted"],"Type":"Microsoft.PreIndexed.Package"}
 ```
@@ -38,12 +39,34 @@ In the Settings Catalog, enable **Administrative Templates > Windows Components 
 
 Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the same value as above.
 
-## Validation
+## Adding packages
+
+The easiest way to author or update a manifest is the Anthelion fork of Komac. Download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases), then use these environment variables:
+
+| Variable             | Value                                                        |
+| -------------------- | ------------------------------------------------------------ |
+| `GITHUB_TOKEN`       | A classic personal access token with the `public_repo` scope |
+| `KOMAC_GITHUB_OWNER` | `pl4nty`                                                     |
+| `KOMAC_GITHUB_REPO`  | `winget-extras`                                              |
+
+```sh
+# add a new package
+komac new Publisher.Package
+
+# update an existing package to a new version
+komac update Publisher.Package --version 1.2.3 --urls https://example.com/setup-1.2.3.exe
+```
+
+### Automated updates
+
+Add a shard at `shards/json/<PackageIdentifier>.json` describing how to detect new versions, and they'll be added automatically. See Anthelion's [CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md) for the shard format, strategies for common sources, and how to test a shard locally with `bun test:shard <PackageIdentifier> --dry-run`.
+
+### Validation
 
 Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
 
-* Interactive installation is only tested if silent installation fails
-* The `arm` architecture (32-bit ARM) is not tested
+- Interactive installation is only tested if silent installation fails
+- The `arm` architecture (32-bit ARM) is not tested
 
 Try validation yourself with these commands.
 
