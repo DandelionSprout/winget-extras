@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Game Jolt Inc.
 PackageName: Game Jolt Desktop App
 PackageUrl: https://gamejolt.com/app
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: The client launcher of the videogame storefront Game Jolt.
 Moniker: gamejolt
 Tags:
