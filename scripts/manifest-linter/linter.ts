@@ -16,6 +16,7 @@ import {
 } from '@/scripts/manifest-linter/types';
 
 const PARSER_RULE_ID = 'schema';
+const SHARD_ROOT = 'shards';
 
 async function scanRepository(
 	roots: NonNullable<LintOptions['roots']>,
@@ -28,6 +29,13 @@ async function scanRepository(
 			})),
 		)
 	).flatMap(({ root, entries }) => entries.map((entry) => ({ root, entry })));
+}
+
+async function scanShards(): Promise<string[]> {
+	const entries = await readdir(SHARD_ROOT, { recursive: true, withFileTypes: true });
+	return entries
+		.filter((entry) => entry.isFile() && entry.parentPath !== SHARD_ROOT)
+		.map((entry) => join(entry.parentPath, entry.name));
 }
 
 async function loadSources(entries: RepositoryEntry[]): Promise<ManifestSource[]> {
@@ -116,7 +124,11 @@ async function applyFixes(
 
 export async function lintManifests(options: LintOptions = {}): Promise<LintResult> {
 	const entries = await scanRepository(options.roots ?? MANIFEST_ROOTS);
-	const [manifestSources] = await Promise.all([loadSources(entries), loadFileModes(entries)]);
+	const [manifestSources, shards] = await Promise.all([
+		loadSources(entries),
+		scanShards(),
+		loadFileModes(entries),
+	]);
 	const diagnostics: Diagnostic[] = [];
 	let activeRuleId = PARSER_RULE_ID;
 	const report = (diagnostic: ReportedDiagnostic): void => {
@@ -130,7 +142,7 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 
 	for (const rule of options.rules ?? defaultRules) {
 		activeRuleId = rule.id;
-		await rule.check({ entries, sources: manifestSources, records, report });
+		await rule.check({ entries, sources: manifestSources, records, shards, report });
 	}
 
 	diagnostics.sort(

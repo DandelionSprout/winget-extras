@@ -62,6 +62,7 @@ export type RuleContext = {
 	readonly entries: RepositoryEntry[];
 	readonly sources: ManifestSource[];
 	readonly records: ManifestRecord[];
+	readonly shards: string[];
 	report: (diagnostic: ReportedDiagnostic) => void;
 };
 
