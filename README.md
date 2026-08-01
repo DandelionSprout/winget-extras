@@ -23,7 +23,7 @@ winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg
 
 Extra packages will be available with commands like `winget search` or `winget install`.
 
-If `winget-extras` does show up when running `winget source list`, but that `winget update` throws a `Failed to update source: winget-extras` error, download and install https://winget.tplant.com.au/cache/source2.msix to force-refresh the cache.
+If `winget update` throws `Failed to update source: winget-extras`, download and install https://winget.tplant.com.au/cache/source2.msix to force-refresh the cache.
 
 ## Enterprise deployment
 
@@ -44,7 +44,7 @@ Enable **Computer Configuration > Administrative Templates > Windows Components 
 
 ## Adding packages
 
-The easiest way to author or update a manifest is the Anthelion fork of Komac. Download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases) or with `winget install unpn-org.Komac -s winget-extras`, then use these environment variables:
+The easiest way to author or update a manifest is the Anthelion fork of Komac. Run `winget install unpn-org.Komac -s winget-extras` or download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases), then set these environment variables:
 
 | Variable             | Value                                                        |
 | -------------------- | ------------------------------------------------------------ |
@@ -70,7 +70,7 @@ Packages are validated automatically using [GitHub Actions](https://github.com/p
 
 - Interactive installation is only tested if silent installation fails.
 - The `arm` architecture (32-bit ARM) is not tested.
-- For hardware-requiring packages, for instance various NVIDIA softwares, the burden is on the submitter to prove that installation succeeds.
+- If the package requires specific hardware, like NVIDIA graphics cards, the submitter should validate manually using a [local install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install#local-install).
 
 Try validation yourself with these commands.
 
