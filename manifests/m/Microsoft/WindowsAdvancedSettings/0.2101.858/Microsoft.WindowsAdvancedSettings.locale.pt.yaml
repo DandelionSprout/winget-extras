@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAdvancedSettings
+PackageVersion: 0.2101.858
+PackageLocale: pt
+PackageName: Configurações Avançadas do Windows
+Tags:
+- configurações-avançadas-do-windows
+- configuraçõesavançadasdowindows
+- configuracoes-avancadas-do-windows
+- configuracoesavancadasdowindows
+- git-repositories
+- git-repos
+- file-explorer
+- fileexplorer
+- 9n8mhtphngvv
+ManifestType: locale
+ManifestVersion: 1.12.0

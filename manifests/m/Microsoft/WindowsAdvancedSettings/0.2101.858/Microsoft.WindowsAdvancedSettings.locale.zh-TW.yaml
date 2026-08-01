@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAdvancedSettings
+PackageVersion: 0.2101.858
+PackageLocale: zh-TW
+PackageName: Windows 高級設定
+Tags:
+- windows-高級設定
+- windows高級設定
+- ㄨㄧㄋˇㄉㄡㄙ˙ㄍㄠㄐㄧˊㄕㄜˋㄉㄧㄥˋ
+- git-repositories
+- git-repos
+- file-explorer
+- fileexplorer
+- 9n8mhtphngvv
+ManifestType: locale
+ManifestVersion: 1.12.0
