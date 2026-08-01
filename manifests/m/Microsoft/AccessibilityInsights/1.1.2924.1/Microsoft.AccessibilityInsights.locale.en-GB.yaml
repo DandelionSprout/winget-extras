@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.AccessibilityInsights
+PackageVersion: 1.1.2924.1
+PackageLocale: en-GB
+Publisher: Microsoft
+Tags:
+- accessibility-insights-for-windows
+- accessibilityinsightsforwindows
+- wcag-2.1-aa
+- colour-contrast-analyser
+- colourcontrastanalyser
+- visual-helper
+- visualhelper
+- developer-tool
+- live-inspect
+- liveinspect
+- fastpass
+ManifestType: locale
+ManifestVersion: 1.28.0

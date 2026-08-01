@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.AccessibilityInsights
+PackageVersion: 1.1.2924.1
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Accessibility Insights for Windows
+PackageUrl: https://accessibilityinsights.io/
+License: MIT
+ShortDescription: The project for Accessibility tools on the Windows platform.
+Moniker: accessibilityinsights
+Tags:
+- accessibility-insights-for-windows
+- accessibilityinsightsforwindows
+- wcag-2.1-aa
+- color-contrast-analyzer
+- colorcontrastanalyzer
+- visual-helper
+- visualhelper
+- developer-tool
+- live-inspect
+- liveinspect
+- fastpass
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://github.com/microsoft/accessibility-insights-windows
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
