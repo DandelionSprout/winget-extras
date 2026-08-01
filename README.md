@@ -6,6 +6,7 @@ A WinGet source for extra packages, especially ones that can't be added to [micr
 - [Need third-party download links](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Download)
 - [Trigger false-positive malware detections](https://github.com/microsoft/winget-pkgs/issues?q=label%3ABinary-Validation-Error)
 - [Require specific hardware to test](https://github.com/microsoft/winget-pkgs/issues?q=label%3A%22Hardware%22)
+- [Be fonts](https://github.com/microsoft/winget-pkgs/issues?q=font%20sort%3Aupdated-desc)
 - Or otherwise be easier to add here, than upstream
 
 Packages are provided on a best-effort basis and may not be up-to-date. If you find a problem or want to add an app, [open an issue](https://github.com/pl4nty/winget-extras/issues/new/choose).
@@ -21,6 +22,8 @@ winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg
 ```
 
 Extra packages will be available with commands like `winget search` or `winget install`.
+
+If `winget update` throws `Failed to update source: winget-extras`, download and install https://winget.tplant.com.au/cache/source2.msix to force-refresh the cache.
 
 ## Enterprise deployment
 
@@ -41,7 +44,7 @@ Enable **Computer Configuration > Administrative Templates > Windows Components 
 
 ## Adding packages
 
-The easiest way to author or update a manifest is the Anthelion fork of Komac. Download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases), then use these environment variables:
+The easiest way to author or update a manifest is the Anthelion fork of Komac. Run `winget install unpn-org.Komac -s winget-extras` or download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases), then set these environment variables:
 
 | Variable             | Value                                                        |
 | -------------------- | ------------------------------------------------------------ |
@@ -65,8 +68,9 @@ Add a shard at `shards/json/<PackageIdentifier>.json` describing how to detect n
 
 Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
 
-- Interactive installation is only tested if silent installation fails
-- The `arm` architecture (32-bit ARM) is not tested
+- Interactive installation is only tested if silent installation fails.
+- The `arm` architecture (32-bit ARM) is not tested.
+- If the package requires specific hardware, like NVIDIA graphics cards, the submitter should validate manually using a [local install](https://learn.microsoft.com/en-us/windows/package-manager/winget/install#local-install).
 
 Try validation yourself with these commands.
 
