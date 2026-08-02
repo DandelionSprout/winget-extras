@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: IM-Magic
 PackageName: IM-Magic Partition Resizer Free
 PackageUrl: https://www.resize-c.com
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: Can expand, shrink, move, merge partitions as well as clone disks, backup partitions, migrate OS, convert file systems, convert dynamic/basic, convert MBR/GPT, etc. without destroying the data.
 Moniker: partitionresizer
 Tags:
