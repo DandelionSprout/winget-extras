@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: BabelStone Fonts
 PackageName: BabelStone Khitan Small Linear
 PackageUrl: https://babelstone.co.uk/Fonts/KhitanLinear.html
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: A font supporting the 470 Khitan Small Script characters that were added in Unicode 13.0 (2020). The font does not support clusters, but is intended for individual glyphs in horizontal linear layout as used in Daniel Kane's The Kitan Language and Script.
 Description: |-
   A Unicode font supporting the 470 Khitan Small Script characters which were encoded in Unicode version 13.0 (March 2020). This font does not support cluster composition, but is intended for displaying individual glyphs in horizontal linear layout as used in Daniel Kane's The Kitan Language and Script (Brill, 2009). This font uses a Chinese (Song/Ming) style of glyphs which is not attested in surviving examples of Khitan small script text (mostly epitaphs engraved on stone tablets).
