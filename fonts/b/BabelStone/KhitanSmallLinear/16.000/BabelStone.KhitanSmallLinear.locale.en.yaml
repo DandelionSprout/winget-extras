@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: BabelStone.KhitanSmallLinear
+PackageVersion: "16.000"
+PackageLocale: en
+Publisher: BabelStone Fonts
+PackageName: BabelStone Khitan Small Linear
+PackageUrl: https://babelstone.co.uk/Fonts/KhitanLinear.html
+License: Freeware
+ShortDescription: A font supporting the 470 Khitan Small Script characters that were added in Unicode 13.0 (2020). The font does not support clusters, but is intended for individual glyphs in horizontal linear layout as used in Daniel Kane's The Kitan Language and Script.
+Description: |-
+  A Unicode font supporting the 470 Khitan Small Script characters which were encoded in Unicode version 13.0 (March 2020). This font does not support cluster composition, but is intended for displaying individual glyphs in horizontal linear layout as used in Daniel Kane's The Kitan Language and Script (Brill, 2009). This font uses a Chinese (Song/Ming) style of glyphs which is not attested in surviving examples of Khitan small script text (mostly epitaphs engraved on stone tablets).
+
+  This font is not to be confused with another font that is called simply "Khitan Small Linear" and which is also hosted on BabelStone's website.
+Moniker: bsksl
+Tags:
+- font
+- babelstone-khitan-small-linear
+- babelstonekhitansmalllinear
+- khitan-small-script
+- khitansmallscript
+- kitan-small-script
+- kitansmallscript
+- liao-dynasty-china
+- unicode-13.0
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
