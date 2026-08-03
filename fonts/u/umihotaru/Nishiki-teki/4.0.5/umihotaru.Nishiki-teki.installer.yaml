@@ -12,5 +12,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://umihotaru.work/nishiki-teki.zip
   InstallerSha256: 9D4DC9A229020EFA459072EB69C926751B4F872646CF32E6D4A53D51FA049189
+UpgradeBehavior: uninstallPrevious
 ManifestType: installer
 ManifestVersion: 1.12.0
