@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
-PackageIdentifier: Microsoft.ROS.2.LyricalLuth
+PackageIdentifier: OpenRobotics.ROS.2.LyricalLuth
 PackageVersion: "1.1"
 DefaultLocale: en
 ManifestType: version

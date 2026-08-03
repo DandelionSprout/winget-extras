@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
-PackageIdentifier: Microsoft.ROS.2.LyricalLuth
+PackageIdentifier: OpenRobotics.ROS.2.LyricalLuth
 PackageVersion: "1.1"
 ReleaseDate: 2026-06-23
 MinimumOSVersion: 10.0.22000.0 # Windows 11
