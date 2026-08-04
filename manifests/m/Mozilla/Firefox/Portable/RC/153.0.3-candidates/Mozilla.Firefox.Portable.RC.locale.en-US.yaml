@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox.Portable.RC
+PackageVersion: 153.0.3-candidates
+PackageLocale: en-US
+Publisher: Mozilla
+PackageName: Mozilla Firefox Release Candidate (Portable)
+PackageUrl: https://ftp.mozilla.org/pub/firefox/candidates
+License: MPL-2.0
+ShortDescription: The portable version of the web browser Firefox. The release candidate version is based on the almost-stable yet somewhat secretive Candidates versions of the Mozilla server hostings of Firefox, which are the ones nearest stable to have ZIP versions.
+Description: |-
+  The portable version of the web browser Firefox. The release candidate version is based on the almost-stable versions of the Mozilla server hostings of Firefox, which are the ones nearest stable to have ZIP versions.
+
+  Initially, this Winget package only contains the app's designated en-US locale. Other locales will likely be added later.
+Moniker: firefoxportablerc
+Tags:
+- web-browser
+- webbrowser
+- gecko
+- pdfreader
+- quantum
+- spidermonkey
+- webpages
+- websites
+- mozilla-firefox-portable-rc
+- mozillafirefoxportablerc
+- mozilla-firefox-portable-candidates
+- mozillafirefoxportablecandidates
+- portable-firefox
+- portablefirefox
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
