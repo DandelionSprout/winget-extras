@@ -33,5 +33,6 @@ Tags:
 - microsoft-win-app-sdk-ddlm-2-x64
 - microsoftwinappsdkddlm2x64
 - dynamic-dependency-lifetime-manager
+- microsoft.winappruntime.ddlm.2
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
