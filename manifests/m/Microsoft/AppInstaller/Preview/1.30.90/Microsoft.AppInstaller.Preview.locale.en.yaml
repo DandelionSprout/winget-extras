@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.AppInstaller.Preview
+PackageVersion: 1.30.90
+PackageLocale: en
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://github.com/microsoft/winget-cli/issues
+PrivacyUrl: https://privacy.microsoft.com/
+Author: Microsoft
+PackageName: App Installer (Preview)
+PackageUrl: https://github.com/microsoft/winget-cli
+License: MIT
+ShortDescription: Preview builds of the WinGet command line tool.
+Moniker: winget-preview
+Tags:
+- app-installer-preview
+- microsoft-app-installer-preview
+- winget-cli-preview
+- microsoft-desktop-app-installer-preview
+- windows-package-manager-preview
+ReleaseNotesUrl: https://github.com/microsoft/winget-cli/releases/tag/1.30.90
+Documentations:
+- DocumentLabel: Microsoft Learn
+  DocumentUrl: https://learn.microsoft.com/en-us/windows/package-manager/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
