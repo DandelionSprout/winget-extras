@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: TranslationCommons.KhemaExtended
+PackageVersion: "1.000"
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Khema_extended.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://translationcommons.org/wp-content/uploads/2026/07/Khema_extended.zip
+  InstallerSha256: E99AA72E1A7E4954D6C31D88B30D7CAC4645D8B64A3F5C2D15C649F5B8EF827C
+ManifestType: installer
+ManifestVersion: 1.12.0
