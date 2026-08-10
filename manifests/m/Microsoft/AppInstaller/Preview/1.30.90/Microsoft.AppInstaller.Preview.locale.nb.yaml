@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.AppInstaller.Preview
+PackageVersion: 1.30.90
+PackageLocale: nb
+PackageName: Appinstallasjonsprogram (Forhåndsversjon)
+ShortDescription: Forhåndsversjoner av Winget-ledetekstverktøyet.
+Tags:
+- pakkebehandling-for-windows-forhånd
+- appinstallasjonsprogram-forhåndsvisning
+- winget-forhåndsversjon
+- winget-cli-forhåndsversjon
+- microsoft-app-installer-preview
+- microsoft-desktop-app-installer-preview
+- windows-package-manager-preview
+ManifestType: locale
+ManifestVersion: 1.28.0
