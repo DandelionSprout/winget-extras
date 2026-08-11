@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: puhitaku.mtplvcap
+PackageVersion: 1.6.2
+PackageLocale: ja
+Publisher: ぷひたく
+Description: mtplvcapは、NikonのカメラのLive ViewをWebSocketでブラウザにリレー。 mtplvcapとOBSを組み合わせることで、NikonのカメラをHDMIキャプチャーボードなしでWebカメラにできます。
+Tags:
+- ニコンフォトカメラ
+- にこん写真かめら
+- nikon-photo-cameras
+- nikon-live-view
+- にこんかめら
+- ウェブカメラ
+- うぇぶかめら
+- ニコンカメラが必要
+- usbが必要
+ManifestType: locale
+ManifestVersion: 1.28.0
