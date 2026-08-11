@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "puhitaku",
+		"repo": "mtplvcap"
+	},
+	"urls": [
+		"https://github.com/puhitaku/mtplvcap/releases/download/v{version}/mtplvcap_windows_amd64.zip"
+	]
+}
