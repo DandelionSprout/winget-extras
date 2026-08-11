@@ -1,0 +1,25 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64/multi/",
+		"regex": "Firefox%20Setup%20\d{2,3}\.\d\d?(\.\d\d?)?.msix"
+	},
+	"urls": [
+		{
+			"url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64/multi/Firefox%20Setup%20{version}.msix",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win32/multi/Firefox%20Setup%20{version}.msix",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64-aarch64/multi/Firefox%20Setup%20{version}.msix",
+			"architecture": "arm64"
+		},
+		{
+			"url": "https://www.firefox.com/en-US/firefox/{version}/releasenotes/"
+		}
+	]
+}
