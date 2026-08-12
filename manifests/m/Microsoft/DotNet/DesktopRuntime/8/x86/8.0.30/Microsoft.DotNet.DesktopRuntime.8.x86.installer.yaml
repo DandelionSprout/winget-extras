@@ -23,5 +23,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.30/windowsdesktop-runtime-8.0.30-win-x86.exe
   InstallerSha256: 1142A5BB7395D624CFB5B728BF5A34BAF1990C622B7671336F97FB4023516334
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0
