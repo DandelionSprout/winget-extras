@@ -21,5 +21,6 @@ Installers:
 - Architecture: arm64
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.11/dotnet-runtime-10.0.11-win-x64.exe
   InstallerSha256: 33DE99EEDA0F06F4B4AD43A1FD23977343E1358F5DBB4B0D5E1B84850DC18AFC
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0
