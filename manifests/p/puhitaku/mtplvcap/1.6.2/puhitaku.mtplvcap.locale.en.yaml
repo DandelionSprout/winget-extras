@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: puhitaku.mtplvcap
+PackageVersion: 1.6.2
+PackageLocale: en
+Publisher: puhitaku
+PackageName: mtplvcap
+License: BSD-3-Clause
+ShortDescription: Use a Nikon photo camera as a webcam through USB and WebSocket.
+Description: |-
+  Use a Nikon photo camera's Live View mode as a webcam through USB and WebSocket, suited for use as an OBS Studio virtual camera through localhost.
+
+  Note that the app has a hard dependency on having a Nikon camera plugged in through USB when it is launched, or it will crash on launch.
+Moniker: mtplvcap
+Tags:
+- nikon-photo-cameras
+- nikon-live-view
+- nikon-cameras
+- photo-camera-as-web-camera
+- photocamera-as-webcamera
+- websocket-camera
+- requires-nikon-camera
+- requiresusb
+Documentations:
+- DocumentLabel: How to install
+  DocumentUrl: https://github.com/puhitaku/mtplvcap/tree/master#how-to-install
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
