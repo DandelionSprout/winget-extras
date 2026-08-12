@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: KaTeX.KaTeX.Fonts
+PackageVersion: 0.18.4
+PackageLocale: en
+Publisher: KaTeX
+PackageName: KaTeX (Fonts)
+License: MIT
+ShortDescription: The fonts that are part of KaTeX, which is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
+Moniker: katex-fonts
+Tags:
+- katexfonts
+- katex_ams
+- katex_caligraphic
+- katex_fraktur
+- katex_main
+- katex_math
+- katex_sansserif
+- katex_typewriter
+- katex_size1
+- katex_size2
+- katex_size3
+- katex_size4
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
