@@ -42,5 +42,6 @@ Installers:
   - runFullTrust
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.25.0_x64__ezfdsptqdsvtr'
+  MSStoreProductIdentifier: 9n0nxg9zmf7z
 ManifestType: installer
 ManifestVersion: 1.12.0
