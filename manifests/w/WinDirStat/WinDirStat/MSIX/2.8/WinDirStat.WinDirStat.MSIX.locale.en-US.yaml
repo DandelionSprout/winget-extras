@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: WinDirStat Team
 PackageName: WinDirStat (MSIX/Portable)
 PackageUrl: https://github.com/windirstat/windirstat
-License: GPLv2
+License: GPL-2.0-or-later
 ShortDescription: A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
 Description: |-
   A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
