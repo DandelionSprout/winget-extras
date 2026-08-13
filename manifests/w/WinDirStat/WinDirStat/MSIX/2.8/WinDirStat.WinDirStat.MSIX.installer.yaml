@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: WinDirStat.WinDirStat.MSIX
+PackageVersion: "2.8"
+ReleaseDate: 2026-08-02
+Platform:
+- Windows.Desktop
+Installers:
+- Architecture: x64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat_x64.msix
+  InstallerSha256: BEAD9FBAED146AA2F05343755C37E0F2BD83A68DFADBC518240F79E54F3114FF
+  SignatureSha256: ACD6B0F8A4FC368C7CC1DEA61A5C734E3A58176239C18A4D09FAD9A7B5A30DF7
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: x64\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstatx86
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat.zip
+  InstallerSha256: 462d60796a793d333abeee79aa188debd444061a51f1abf8745340f902c3e047
+  AppsAndFeaturesEntries:
+  - DisplayName: WinDirStat (Portable)
+  UnsupportedOSArchitectures:
+  - arm64
+- Architecture: x86
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat_x86.msix
+  InstallerSha256: 347dfa435fae56e5e3016f9118456e9c83927ef04bf22f96448c1d2e744a5f2a
+  SignatureSha256: 20bab9e7fe654cfdb2aef87dce94463068e7935ba37760674800925e67075878
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat.zip
+  InstallerSha256: 462d60796a793d333abeee79aa188debd444061a51f1abf8745340f902c3e047
+  AppsAndFeaturesEntries:
+  - DisplayName: WinDirStat (Portable)
+  UnsupportedOSArchitectures:
+  - x64
+  - arm64
+- Architecture: arm64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat_arm64.msix
+  InstallerSha256: 0fe90502175a039e5c9147b70a09e257a2710b36297791198f7cffa3d9ad1282
+  SignatureSha256: 99afabb6bff0e833e078665cd652323f50a9e5f53d7c5c8f9e906e6638cf79b5
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: arm64\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  - RelativeFilePath: x64\WinDirStat.exe
+    PortableCommandAlias: windirstatx64
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstatx86
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat.zip
+  InstallerSha256: 462d60796a793d333abeee79aa188debd444061a51f1abf8745340f902c3e047
+  AppsAndFeaturesEntries:
+  - DisplayName: WinDirStat (Portable)
+- Architecture: neutral
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release%2Fv2.8.0/WinDirStat_x86_x64_arm64.msixbundle
+  InstallerSha256: e04bef280791ef2c641c319e91f0ae2269044bdb8b07eb57d212312b9114abf2
+  SignatureSha256: 8e27ce1cb2bd161b57b31b7595288dc7b119f5c37b95bf51589b7e290f50d70e
+ManifestType: installer
+ManifestVersion: 1.28.0

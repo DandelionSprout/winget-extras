@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: WinDirStat.WinDirStat.MSIX
+PackageVersion: "2.8"
+PackageLocale: en-US
+Publisher: WinDirStat Team
+PackageName: WinDirStat (MSIX/Portable)
+PackageUrl: https://github.com/windirstat/windirstat
+License: GPLv2
+ShortDescription: A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+Description: |-
+  A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+
+  For the portable version, use "winget install WinDirStat.WinDirStat.MSIX --installer-type portable".
+Moniker: windirstatmsix
+Tags:
+- windirstat-msix
+- win-dir-stat-msix
+- disk-cleanup
+- diskcleanup
+- disk-space-analyzer
+- disk-usage-analyzer
+- duplicate-detection
+- diskspaceanalyzer
+- diskusageanalyzer
+- duplicatedetection
+- treemaps
+- 9ph1gl95p3wf
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://windirstat.net/download.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
