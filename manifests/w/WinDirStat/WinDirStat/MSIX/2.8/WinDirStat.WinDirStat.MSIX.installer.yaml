@@ -13,6 +13,8 @@ Installers:
   InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.8.0/WinDirStat_x64.msix
   InstallerSha256: BEAD9FBAED146AA2F05343755C37E0F2BD83A68DFADBC518240F79E54F3114FF
   SignatureSha256: ACD6B0F8A4FC368C7CC1DEA61A5C734E3A58176239C18A4D09FAD9A7B5A30DF7
+  RestrictedCapabilities:
+  - runFullTrust
 - Architecture: x64
   InstallerType: zip
   NestedInstallerType: portable
@@ -34,6 +36,8 @@ Installers:
   InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.8.0/WinDirStat_x86.msix
   InstallerSha256: 347dfa435fae56e5e3016f9118456e9c83927ef04bf22f96448c1d2e744a5f2a
   SignatureSha256: 20bab9e7fe654cfdb2aef87dce94463068e7935ba37760674800925e67075878
+  RestrictedCapabilities:
+  - runFullTrust
 - Architecture: x86
   InstallerType: zip
   NestedInstallerType: portable
@@ -54,6 +58,8 @@ Installers:
   InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.8.0/WinDirStat_arm64.msix
   InstallerSha256: 0fe90502175a039e5c9147b70a09e257a2710b36297791198f7cffa3d9ad1282
   SignatureSha256: 99afabb6bff0e833e078665cd652323f50a9e5f53d7c5c8f9e906e6638cf79b5
+  RestrictedCapabilities:
+  - runFullTrust
 - Architecture: arm64
   InstallerType: zip
   NestedInstallerType: portable
