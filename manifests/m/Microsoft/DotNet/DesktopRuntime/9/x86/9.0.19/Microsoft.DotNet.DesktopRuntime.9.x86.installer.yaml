@@ -23,5 +23,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/9.0.19/windowsdesktop-runtime-9.0.19-win-x86.exe
   InstallerSha256: 31AB52DCF6440AE1BAC553B21AD97FD88F2F2354DF71B19946F90FDE426595BA
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

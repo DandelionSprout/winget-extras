@@ -23,5 +23,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.19/dotnet-runtime-9.0.19-win-x86.exe
   InstallerSha256: 3C50F69DE15DB43FE7231C4C01780DFDF290D7142D79B07E4A98A9C300F3E3CE
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

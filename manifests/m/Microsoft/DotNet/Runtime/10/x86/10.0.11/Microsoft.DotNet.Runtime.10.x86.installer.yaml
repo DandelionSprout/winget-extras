@@ -23,5 +23,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.11/dotnet-runtime-10.0.11-win-x86.exe
   InstallerSha256: 82ED8F3B15908EE18399338D679A7A61E52C4136D2064F168DA5950B71D956B8
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

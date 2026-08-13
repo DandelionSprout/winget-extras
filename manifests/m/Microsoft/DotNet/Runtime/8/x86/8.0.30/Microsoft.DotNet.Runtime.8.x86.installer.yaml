@@ -23,5 +23,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.30/dotnet-runtime-8.0.30-win-x86.exe
   InstallerSha256: 2B4B0D08BDE8567ED63A07E50EB23C4A7DA5064C954D62DD5949DE90D6EAC379
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0
