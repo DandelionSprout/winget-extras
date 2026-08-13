@@ -6,6 +6,7 @@
 		"https://github.com/windirstat/windirstat/releases/download/release%2Fv{version}/WinDirStat_x64.msix",
         "https://github.com/windirstat/windirstat/releases/download/release%2Fv{version}/WinDirStat_x86.msix",
         "https://github.com/windirstat/windirstat/releases/download/release%2Fv{version}/WinDirStat_arm64.msix",
+		"https://github.com/windirstat/windirstat/releases/download/release%2Fv{version}/WinDirStat.zip",
         "https://github.com/windirstat/windirstat/releases/download/release%2Fv{version}/WinDirStat_x86_x64_arm64.msixbundle"
 	]
 }
