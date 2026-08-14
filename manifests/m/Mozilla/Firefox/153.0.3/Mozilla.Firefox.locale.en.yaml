@@ -12,7 +12,7 @@ PackageName: Mozilla Firefox (Locale-/installer-neutral)
 PackageUrl: https://www.mozilla.org/firefox/
 License: MPL-2.0
 LicenseUrl: https://www.mozilla.org/MPL/2.0
-Copyright: © Firefox and Mozilla Developers
+Copyright: © Firefox and Mozilla Developers.
 CopyrightUrl: https://www.mozilla.org/foundation/trademarks/policy
 ShortDescription: The legendary web browser by Mozilla.
 Description: |-
