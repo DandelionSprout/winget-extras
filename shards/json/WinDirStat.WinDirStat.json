@@ -16,7 +16,9 @@
 		"https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat-arm64.msi",
 		{
 			"url": "https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat.zip",
-			"nestedInstallerMatches": ["WinDirStat.exe"]
+			"nestedInstallerMatches": [
+				"WinDirStat.exe"
+			]
 		}
 	]
 }
