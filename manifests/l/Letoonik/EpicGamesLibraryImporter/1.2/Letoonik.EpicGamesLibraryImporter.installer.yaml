@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Letoonik.EpicGamesLibraryImporter
+PackageVersion: "1.2"
+ReleaseDate: 2026-01-11
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: EpicGamesImportTool-1.2-win-x64\EGSIT.UI.exe
+  PortableCommandAlias: egsit.ui
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/1.2/EpicGamesImportTool-1.2-win-x64.zip
+  InstallerSha256: 8F5B09BB81AEC6699D5FA976DF5D1D72354D2C62E17FCFB17C53D0A4E5C43D60
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8
+      MinimumVersion: 8.0.30
+- Architecture: arm64
+  InstallerUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/1.2/EpicGamesImportTool-1.2-win-x64.zip
+  InstallerSha256: 8F5B09BB81AEC6699D5FA976DF5D1D72354D2C62E17FCFB17C53D0A4E5C43D60
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8.x64
+      MinimumVersion: 8.0.30
+ManifestType: installer
+ManifestVersion: 1.12.0

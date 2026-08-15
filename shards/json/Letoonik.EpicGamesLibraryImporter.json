@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "Letoonik", "repo": "EpicGamesLibraryImporter" },
+	"urls": [
+		"https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/{version}/EpicGamesImportTool-{version}-win-x64.zip"
+	]
+}
