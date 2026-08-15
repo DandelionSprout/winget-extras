@@ -5,7 +5,7 @@ PackageLocale: en
 Publisher: Marc Ochsenmeier
 PackageName: Malware Initial Assessment
 PackageUrl: https://www.winitor.com/download
-License: Freeware non-professional
+License: Freeware
 LicenseUrl: https://www.winitor.com/download2
 ShortDescription: Accelerate your malware assessment workflow by quickly identifying key indicators in Windows executable files using our tool, pestudio.
 Moniker: pestudio
