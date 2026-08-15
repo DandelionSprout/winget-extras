@@ -63,7 +63,8 @@
 			"fonts/l/larsenwork/Monoid": "discontinued"
 		},
 		"repository/upstream-versions": {
-			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers"
+			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
+			"manifests/w/WinDirStat/WinDirStat/2.8.0/**": "upstream is missing MSIX installers"
 		}
 	}
 }
