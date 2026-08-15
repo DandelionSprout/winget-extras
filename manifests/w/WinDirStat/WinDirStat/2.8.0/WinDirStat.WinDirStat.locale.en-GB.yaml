@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
 PackageIdentifier: WinDirStat.WinDirStat
-PackageVersion: "2.8"
+PackageVersion: "2.8.0"
 PackageLocale: en-GB
 ShortDescription: A disk usage analyser and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
 Description: |-
