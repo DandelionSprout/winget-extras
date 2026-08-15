@@ -28,5 +28,6 @@ Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/10.0.11/windowsdesktop-runtime-10.0.11-win-x86.exe
   InstallerSha256: 28DF04D05F7735ABD201373EFFCE57B439796BB102A659F09652BA53F4A7584A
+ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

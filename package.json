@@ -9,10 +9,11 @@
 		"test:manifests": "bun test scripts",
 		"manifests:generate": "bun --experimental-http2-fetch scripts/manifest-linter/generate-manifest-types.ts",
 		"manifests:check": "bun --experimental-http2-fetch scripts/manifest-linter",
-		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix"
+		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix",
+		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#2f788eb69db0e97fc026eb22c50203664a18d544",
+		"anthelion": "github:UnownPlain/anthelion-external#4fda065b931e58e7bd2fa7383b5df4148f468ea6",
 		"fflate": "0.8.3"
 	},
 	"devDependencies": {
@@ -21,8 +22,8 @@
 		"ajv": "8.20.0",
 		"ajv-formats": "3.0.1",
 		"json-schema-to-dts": "2.0.1",
-		"oxfmt": "0.62.0",
-		"oxlint": "1.77.0",
+		"oxfmt": "0.63.0",
+		"oxlint": "1.78.0",
 		"oxlint-tsgolint": "7.0.2001"
 	}
 }
