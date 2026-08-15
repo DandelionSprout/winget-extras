@@ -1,0 +1,18 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://download.savannah.gnu.org/",
+		"regex": "^.*$"
+	},
+	"urls": [
+		{
+			"url": "https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x64.msi",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x86.msi",
+			"architecture": "x86"
+		}
+	]
+}
