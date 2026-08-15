@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: XnSoft.XnRetro
+PackageVersion: "1.30"
+ReleaseDate: 2021-06-14
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: XnRetro\XnRetro.exe
+  PortableCommandAlias: xnretro
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.xnview.com/old_versions/XnRetro/XnRetro-1.30-win-x64.zip
+  InstallerSha256: D51B03BCFAD75B477E713AEBB24757661F3D8490D8AA4D052ABB27132238A2E1
+ManifestType: installer
+ManifestVersion: 1.28.0
