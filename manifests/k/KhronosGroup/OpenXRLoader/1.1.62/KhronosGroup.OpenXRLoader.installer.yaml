@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: KhronosGroup.OpenXRLoader
+PackageVersion: 1.1.62
+ReleaseDate: 2026-08-01
+InstallerType: zip
+NestedInstallerType: portable
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: x64\bin\hello_xr.exe
+  - RelativeFilePath: x64\bin\openxr_runtime_list.exe
+  - RelativeFilePath: x64\bin\openxr_runtime_list_json.exe
+  InstallerUrl: https://github.com/KhronosGroup/OpenXR-SDK-Source/releases/download/release-1.1.62/openxr_loader_windows-1.1.62.zip
+  InstallerSha256: 800ec772e2f9448a26ab9f579f4914d984346dd9d0d7c007841abe21d2c8ff2f
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: Win32\bin\hello_xr.exe
+  - RelativeFilePath: Win32\bin\openxr_runtime_list.exe
+  - RelativeFilePath: Win32\bin\openxr_runtime_list_json.exe
+  InstallerUrl: https://github.com/KhronosGroup/OpenXR-SDK-Source/releases/download/release-1.1.62/openxr_loader_windows-1.1.62.zip
+  InstallerSha256: 800ec772e2f9448a26ab9f579f4914d984346dd9d0d7c007841abe21d2c8ff2f
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: ARM64_uwp\bin\hello_xr.exe
+  - RelativeFilePath: ARM64_uwp\bin\openxr_runtime_list.exe
+  - RelativeFilePath: ARM64_uwp\bin\openxr_runtime_list_json.exe
+  InstallerUrl: https://github.com/KhronosGroup/OpenXR-SDK-Source/releases/download/release-1.1.62/openxr_loader_windows-1.1.62.zip
+  InstallerSha256: 800ec772e2f9448a26ab9f579f4914d984346dd9d0d7c007841abe21d2c8ff2f
+ManifestType: installer
+ManifestVersion: 1.28.0

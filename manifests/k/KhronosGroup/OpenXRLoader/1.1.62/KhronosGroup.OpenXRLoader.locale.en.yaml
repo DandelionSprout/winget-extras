@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: KhronosGroup.OpenXRLoader
+PackageVersion: 1.1.62
+PackageLocale: en
+Publisher: Khronos Group
+PackageName: OpenXR Loader
+PackageUrl: https://github.com/KhronosGroup/OpenXR-SDK-Source
+License: Apache-2.0
+ShortDescription: The build scripts for implementations of the OpenXR loader, validation layers, and code samples. It can also detect the PC's supported graphics APIs.
+Moniker: openxrloader
+Tags:
+- openxr-loader
+- open-xr-loader
+- openxr-sdk-source
+- openxrsdksource
+- requirescmd
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
