@@ -2,7 +2,5 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
 	"github": { "owner": "gheyret", "repo": "UyghurEditPP" },
-	"urls": [
-		"https://github.com/gheyret/UyghurEditPP/releases/download/{version}/UyghurEditPP.zip"
-	]
+	"urls": ["https://github.com/gheyret/UyghurEditPP/releases/download/{version}/UyghurEditPP.zip"]
 }
