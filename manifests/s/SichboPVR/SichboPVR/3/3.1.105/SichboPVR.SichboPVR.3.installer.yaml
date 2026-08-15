@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: SichboPVR.SichboPVR.3
+PackageVersion: 3.1.105
+InstallerType: nullsoft
+Scope: machine
+ProductCode: SichboPVR
+ReleaseDate: 2021-02-05
+AppsAndFeaturesEntries:
+- ProductCode: SichboPVR
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\SichboPVR'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://sichbopvr.com/releases/SichboPVRSetup-3.1.105.exe
+  InstallerSha256: C7ED92D0D1B517E193C283E6B7252A962360FDB9FC78562D6450F07E4C8134EC
+ManifestType: installer
+ManifestVersion: 1.28.0
