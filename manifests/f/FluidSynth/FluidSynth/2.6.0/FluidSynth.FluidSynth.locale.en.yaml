@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FluidSynth.FluidSynth
+PackageVersion: 2.6.0
+PackageLocale: en
+Publisher: FluidSynth
+PackageName: FluidSynth
+PackageUrl: https://github.com/FluidSynth/fluidsynth
+License: LGPL-2.1-or-later
+ShortDescription: Software synthesizer based on the SoundFont 2 specifications.
+Moniker: fluidsynth
+Tags:
+- fluid-synth
+- software-synthesizer
+- requirescmd
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
