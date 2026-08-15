@@ -1,8 +1,12 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": { "owner": "KhronosGroup", "repo": "OpenXR-SDK-Source" },
+	"github": {
+		"owner": "KhronosGroup",
+		"repo": "OpenXR-SDK-Source"
+	},
+	"versionRemove": "release-",
 	"urls": [
-		"https://github.com/KhronosGroup/OpenXR-SDK-Source/releases/download/release-{version}/openxr_loader_windows-{version}.zip"
+		"https://github.com/KhronosGroup/OpenXR-SDK-Source/releases/download/{github.rawTag}/openxr_loader_windows-{version}.zip"
 	]
 }
