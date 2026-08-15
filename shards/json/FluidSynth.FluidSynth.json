@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "FluidSynth", "repo": "fluidsynth" },
+	"urls": [
+		"https://github.com/FluidSynth/fluidsynth/releases/download/v{version}/fluidsynth-v{version}-win10-x64-cpp11.zip",
+		"https://github.com/FluidSynth/fluidsynth/releases/download/v{version}/fluidsynth-v{version}-win10-x86-cpp11.zip"
+	]
+}
