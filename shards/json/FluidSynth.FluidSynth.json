@@ -3,7 +3,7 @@
 	"strategy": "github-release",
 	"github": { "owner": "FluidSynth", "repo": "fluidsynth" },
 	"urls": [
-		"https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v{version}-win10-x64-cpp11.zip",
-		"https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v{version}-win10-x86-cpp11.zip"
+		"https://github.com/FluidSynth/fluidsynth/releases/download/v{version}/fluidsynth-v{version}-win10-x64-cpp11.zip",
+		"https://github.com/FluidSynth/fluidsynth/releases/download/v{version}/fluidsynth-v{version}-win10-x86-cpp11.zip"
 	]
 }
