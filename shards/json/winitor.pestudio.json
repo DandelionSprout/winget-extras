@@ -1,19 +1,16 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": {
-		"source": "product"
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://www.winitor.com/tools/pestudio/changes.log",
+		"regex": "(?:Version|to) (\\d+(?:\\.\\d+)+)"
 	},
 	"urls": [
 		{
 			"url": "https://www.winitor.com/tools/pestudio/current/pestudio.zip",
-			"nestedInstallerMatches": ["pestudio\\pestudio.exe"]
+			"architecture": "x64",
+			"nestedInstallerMatches": ["pestudio/pestudio.exe"]
 		}
 	],
-	"state": {
-		"source": "response-header",
-		"url": "https://www.winitor.com/tools/pestudio/current/pestudio.zip",
-		"header": "etag"
-	},
 	"replace": true
 }
