@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://www.winitor.com/tools/pestudio/current/pestudio.zip",
+			"nestedInstallerMatches": ["pestudio\pestudio.exe"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.winitor.com/tools/pestudio/current/pestudio.zip",
+		"header": "etag"
+	},
+	"replace": true
+}
