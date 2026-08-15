@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: gheyret.UKIJTuz
+PackageVersion: "3.10"
+ReleaseDate: 2011-04-08
+InstallerType: zip
+NestedInstallerType: font
+Installers:
+- Architecture: neutral
+  NestedInstallerFiles:
+  - RelativeFilePath: UyghurEditPP\UKIJTuz.ttf
+  - RelativeFilePath: UyghurEditPP\UKIJTuzBold.ttf
+  InstallerUrl: https://github.com/gheyret/UyghurEditPP/releases/download/0.82/UyghurEditPP.zip
+  InstallerSha256: 2DF520DB22EE3353661BD0928B563AFE279243DE85B48C6006A7334A42270734
+ManifestType: installer
+ManifestVersion: 1.28.0
