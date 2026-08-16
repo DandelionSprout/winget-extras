@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: SichboPVR.SichboPVR.3
+PackageVersion: 3.1.105
+PackageLocale: nb
+ShortDescription: Den gamle og underfundige versjon 3 av SichboPVR.
+Tags:
+- digital-antenne-tv
+- digital-tv
+- digitalt-bakkenett
+- dtv
+- dvb-t2
+- fjernsyn
+- nrk
+- riks-tv
+- rtl-sdr
+- videoavspiller
+ManifestType: locale
+ManifestVersion: 1.28.0

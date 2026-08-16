@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: SichboPVR.SichboPVR.3
+PackageVersion: 3.1.105
+PackageLocale: en
+Publisher: Sichbo Interactive
+PackageName: SichboPVR 3
+PackageUrl: https://sichbopvr.com/en-gb/v3
+License: Freeware
+ShortDescription: The old and quirky version 3 of SichboPVR.
+Moniker: sichbopvr-3
+Tags:
+- antenna-tv
+- digital-terrestrial-television
+- dtv
+- dvb-t2
+- freeview-telly
+- over-the-air-television
+- rtl-sdr
+- saorview
+- video-player
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
