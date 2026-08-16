@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "Multicorewareinc",
+		"repo": "x265"
+	},
+	"urls": [
+		"https://github.com/Multicorewareinc/x265/releases/download/{version}/x265-static-{version}-win-x86_64.exe"
+	]
+}
