@@ -2,7 +2,7 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "page-match",
 	"pageMatch": {
-		"regex": "\d\.\d{3,4}\.\d{5}\.0"
+		"regex": "\\d\.\\d{3,4}\.\\d{5}\.0"
 	},
 	"urls": [
 		"https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/{version}/Microsoft.M365Companions_x64.msix",
