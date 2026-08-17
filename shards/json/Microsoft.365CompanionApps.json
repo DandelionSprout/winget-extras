@@ -2,7 +2,6 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "json",
 	"json": {
-		"url": "https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod",
 		"path": "version"
 	},
 	"urls": [
