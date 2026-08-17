@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
 PackageIdentifier: Microsoft.SystemCenter.ServiceManager.Backup
 PackageVersion: 10.25.1523
 PackageLocale: nb
