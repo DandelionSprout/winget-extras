@@ -32,5 +32,7 @@ Tags:
 Documentations:
 - DocumentLabel: Info on parameters
   DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
