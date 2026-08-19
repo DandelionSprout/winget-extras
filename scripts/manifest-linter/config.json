@@ -51,6 +51,7 @@
 			"manifests/m/Microsoft/WindowsSDK/BuildTools": "nuget.org serves the package as .nupkg, an extension komac rejects for installer analysis",
 			"manifests/m/Microsoft/WindowsSDK/Orca": "selfhosted, shipped inside the Windows SDK ISO",
 			"manifests/m/Microsoft/eDiscoveryExportTool": "selfhosted, ClickOnce deployment with no standalone download",
+			"manifests/n/Nvidia/Driver/GeForceGameReady/6x0": "its maintenance channel is discontinued",
 			"manifests/n/NRaas/Packer": "discontinued",
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
