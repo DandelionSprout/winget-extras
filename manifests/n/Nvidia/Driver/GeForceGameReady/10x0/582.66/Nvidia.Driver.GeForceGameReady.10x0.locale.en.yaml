@@ -4,13 +4,13 @@ PackageIdentifier: Nvidia.Driver.GeForceGameReady.10x0
 PackageVersion: "582.66"
 PackageLocale: en
 Publisher: NVIDIA Corporation
-PackageName: NVIDIA GeForce Game Ready Driver (10x0/9x0/7x0 cards)
+PackageName: NVIDIA GeForce Game Ready Driver (10x0/9x0/750/745 cards)
 PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
-ShortDescription: Drivers for NVIDIA series 10x0, 9x0, and 7x0 graphics cards.
+ShortDescription: Drivers for NVIDIA series 10x0, 9x0, 750 Ti, 750, and 745 graphics cards.
 Description: |-
-  Graphics and audio drivers for NVIDIA series 10x0, 9x0, and 7x0 graphics cards.
+  Graphics and audio drivers for NVIDIA series 110x0, 9x0, 750 Ti, 750, and 745 graphics cards.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
 Moniker: nvidiadriver10x0
