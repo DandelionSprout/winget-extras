@@ -6,8 +6,8 @@ PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver (6x0 and most 7x0 cards)
 PackageUrl: https://www.nvidia.com/en-gb/drivers/details/229812/
-License: Proprietary (Freeware)
-Copyright: © 2011-2024 NVIDIA Corporation
+License: Freeware
+Copyright: © 2011-2024 NVIDIA Corporation.
 ShortDescription: Drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) and 6x0 graphics cards.
 Description: |-
   Graphics and audio drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) and 6x0 graphics cards.
