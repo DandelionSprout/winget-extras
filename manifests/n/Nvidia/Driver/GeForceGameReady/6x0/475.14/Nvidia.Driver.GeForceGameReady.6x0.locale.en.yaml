@@ -8,9 +8,9 @@ PackageName: NVIDIA GeForce Game Ready Driver (6x0 and most 7x0 cards)
 PackageUrl: https://www.nvidia.com/en-gb/drivers/details/229812/
 License: Proprietary (Freeware)
 Copyright: © 2011-2024 NVIDIA Corporation
-ShortDescription: Drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) 6x0 graphics cards.
+ShortDescription: Drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) and 6x0 graphics cards.
 Description: |-
-  Graphics and audio drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) 6x0 graphics cards.
+  Graphics and audio drivers for NVIDIA series 7x0 (except 750 Ti, 750, and 745) and 6x0 graphics cards.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
 Moniker: nvidiadriver6x0
