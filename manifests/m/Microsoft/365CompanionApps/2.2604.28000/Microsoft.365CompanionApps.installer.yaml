@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.365CompanionApps
+PackageVersion: 2.2604.28000
+Platform:
+- Windows.Desktop
+Installers:
+- Architecture: x64
+  MinimumOSVersion: 10.0.22000.0
+  InstallerType: msix
+  PackageFamilyName: Microsoft.M365Companions_8wekyb3d8bbwe
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_x64.msix
+  InstallerSha256: 77784438392ea9a118cb8a698672e8808cc6b266af71878bf1edc930a7dbb3a8
+  SignatureSha256: 15d093fc0426d6f52988cc2bfbf73a6e11914323cc9997a2352d6d0cd8c59904
+  Protocols:
+  - ms-m365companion-calendar
+  - ms-m365companion-files
+  - ms-m365companion-people
+  RestrictedCapabilities:
+  - internetClient
+  - packageManagement
+  - runFullTrust
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: xpdAgent.exe
+  - RelativeFilePath: People\People.exe
+  - RelativeFilePath: People\PeopleLauncher.exe
+  - RelativeFilePath: Files\Files.exe
+  - RelativeFilePath: Files\FilesLauncher.exe
+  - RelativeFilePath: Calendar\Calendar.exe
+  - RelativeFilePath: Calendar\CalendarLauncher.exe
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_x64.msix
+  InstallerSha256: 77784438392ea9a118cb8a698672e8808cc6b266af71878bf1edc930a7dbb3a8
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft 365 Companion Apps (People/Files/Calendar; portable x64)
+- Architecture: arm64
+  MinimumOSVersion: 10.0.22000.0
+  InstallerType: msix
+  PackageFamilyName: Microsoft.M365Companions_8wekyb3d8bbwe
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_arm64.msix
+  InstallerSha256: 27bc31559bb22f3c045d4e75db40bade492013b333bc73dcf9c3006487dcca2b
+  SignatureSha256: 5a4215bd18404e574997ae8a539a5831199de4cbe46ab3b7b16c85a092fd37ed
+  Protocols:
+  - ms-m365companion-calendar
+  - ms-m365companion-files
+  - ms-m365companion-people
+  RestrictedCapabilities:
+  - internetClient
+  - packageManagement
+  - runFullTrust
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: xpdAgent.exe
+  - RelativeFilePath: People\People.exe
+  - RelativeFilePath: People\PeopleLauncher.exe
+  - RelativeFilePath: Files\Files.exe
+  - RelativeFilePath: Files\FilesLauncher.exe
+  - RelativeFilePath: Calendar\Calendar.exe
+  - RelativeFilePath: Calendar\CalendarLauncher.exe
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_arm64.msix
+  InstallerSha256: 27bc31559bb22f3c045d4e75db40bade492013b333bc73dcf9c3006487dcca2b
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft 365 Companion Apps (People/Files/Calendar; portable ARM64)
+ManifestType: installer
+ManifestVersion: 1.28.0
