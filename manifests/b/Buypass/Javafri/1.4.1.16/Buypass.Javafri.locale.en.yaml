@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Buypass.Javafri
+PackageVersion: 1.4.1.16
+PackageLocale: en
+PackageUrl: https://www.buypass.com/help/buypass-id/smartcard/javafri
+License: Proprietary
+ShortDescription: A software solution that enables secure communication between your web browser and Buypass Smart Card. The solution is used by a number of Buypass' customer sites as well as in Bypass' authentication services.
+Tags:
+- buypass-javafre
+- buypassjavafree
+- buypass-smart-card
+- buypasssmartcard
+- buypass-id
+- javafri-løsning
+- javafriløsning
+- javafree-solution
+- javafreesolution
+- buypass-scproxy
+- id-porten
+- idporten
+- norway
+ManifestType: locale
+ManifestVersion: 1.12.0
