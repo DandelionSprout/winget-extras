@@ -9,6 +9,9 @@ Installers:
 - Architecture: x86
   InstallerUrl: https://download.advanced-port-scanner.com/download/files/Advanced_Port_Scanner_2.5.3869.exe
   InstallerSha256: D0C1662CE239E4D288048C0E3324EC52962F6DDDA77DA0CB7AF9C1D9C2F1E2EB
+ProductCode: '{9699065C-A6FD-4AA5-80E6-E2A7FAE0757B}'
+AppsAndFeaturesEntries:
+- ProductCode: '{9699065C-A6FD-4AA5-80E6-E2A7FAE0757B}'
 ElevationRequirement: elevationRequired
 FileExtensions:
 - exe
