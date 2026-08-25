@@ -114,9 +114,9 @@ jobs:
               subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
           - name: Install Tools
-            uses: jdx/mise-action@7e36c90d9ab29c415a2384db3006f3ec8a8cc654 # v4.2.4
+            uses: jdx/mise-action@3c2e0cf82a5b2e5249f0d3635a4d83d0ae861518 # v4.2.5
             with:
-              version: 2026.8.5
+              version: 2026.8.10
               install_args: rclone aqua:vcsjones/AzureSignTool
 
       - name: Sign source package
@@ -133,7 +133,7 @@ jobs:
         working-directory: index
         run: |
           $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
-          rclone sync cache r2:winget-extras/cache --checksum --fast-list $extraArgs
+          rclone sync cache r2:winget-extras/cache --checksum --fast-list --use-json-log --log-file $env:RUNNER_TEMP/rclone.log $extraArgs
         env:
           DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -144,9 +144,18 @@ jobs:
           RCLONE_CONFIG_R2_ENV_AUTH: 'true'
           RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
 
-      - name: Set source version header
-        if: github.ref == 'refs/heads/main'
+      - name: Set source version header and purge CDN
         run: |
+          $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
+            Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved|Skipped (copy|update|delete|move))' } |
+            ForEach-Object { "https://winget.tplant.com.au/cache/$($_.object)" } |
+            Sort-Object -Unique)
+          if ($env:DRY_RUN -eq 'true') {
+            Write-Host "Would set sourceversion header to $env:SOURCE_VERSION and purge $($urls.Count) URLs:"
+            $urls | Write-Host
+            return
+          }
+
           $body = @{
             action = 'rewrite'
             action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
@@ -155,6 +164,14 @@ jobs:
             expression = '(http.host eq "winget.tplant.com.au" and starts_with(http.request.uri.path, "/cache/") and ends_with(http.request.uri.path, ".msix"))'
           } | ConvertTo-Json -Depth 5
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
+
+          $zoneId = [regex]::Match($env:RULE_URL, 'zones/([0-9a-f]+)').Groups[1].Value
+          for ($i = 0; $i -lt $urls.Count; $i += 30) {
+            $body = @{ files = [array]$urls[$i..([Math]::Min($i + 29, $urls.Count - 1))] } | ConvertTo-Json
+            Invoke-RestMethod -Method Post -Uri "https://api.cloudflare.com/client/v4/zones/$zoneId/purge_cache" -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
+          }
+          Write-Host "Purged $($urls.Count) URLs"
         env:
+          DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           RULE_URL: ${{ vars.CLOUDFLARE_RULE_URL }}

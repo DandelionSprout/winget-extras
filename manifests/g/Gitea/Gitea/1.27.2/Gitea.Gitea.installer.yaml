@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 1.27.2
+ReleaseDate: 2026-08-14
+InstallerType: portable
+UpgradeBehavior: install
+Commands:
+- gitea
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-amd64.exe
+  InstallerSha256: 9e0a9982127e2f0c7f586a425ff3b62ad5900448f87944fdb86e135284e032fe
+- Architecture: x86
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-386.exe
+  InstallerSha256: 1947a02174250612e32d9ef961493b5582d4ceabf0ee19140a569792cc06e1b0
+- Architecture: arm64
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-arm64.exe
+  InstallerSha256: 12878613c99c89187080329398915ec1753581e40ebc10dff6e25c0a5545c9d3
+ManifestType: installer
+ManifestVersion: 1.28.0
