@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "git-for-windows",
+		"repo": "git"
+	},
+	"urls": [
+		"https://github.com/git-for-windows/git/releases/download/v.*/PortableGit-{version}-64-bit.7z.exe",
+		"https://github.com/git-for-windows/git/releases/download/v.*/PortableGit-{version}-arm64.7z.exe"
+	]
+}
