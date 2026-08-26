@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.55.0.5
+ReleaseDate: 2026-08-20
+InstallerType: exe
+InstallerSwitches:
+  Silent: -y
+  SilentWithProgress: -y
+  InstallLocation: -o"<INSTALLPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-64-bit.7z.exe
+  InstallerSha256: 5aa8a20f6e9abb2c755f0e73c91c687701a46b309ad84a0ca6509380fa4ae290
+- Architecture: arm64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-arm64.7z.exe
+  InstallerSha256: 49d1dd3158017fa9805d07268433dbab7021b2ec1c1cc3fbabaf8b8255764dd0
+InstallLocationRequired: true
+ManifestType: installer
+ManifestVersion: 1.28.0
