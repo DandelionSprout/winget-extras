@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "leosefcik",
+		"repo": "controller-rumble-tool"
+	},
+	"urls": [
+		"https://github.com/leosefcik/controller-rumble-tool/releases/download/v{version}/controller-rumble-tool_v{version}_windows.zip"
+	]
+}
