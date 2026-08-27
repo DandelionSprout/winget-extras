@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: leosefcik
 PackageName: Controller Rumble Tool
 PackageUrl: https://github.com/leosefcik/controller-rumble-tool
-License: GPLv3
+License: GPL-3.0-or-later
 ShortDescription: Advanced Godot app for directly controlling the rumble motors of a gamepad. Useful for controller diagnostics and massages.
 Moniker: controllerrumbletool
 Tags:
