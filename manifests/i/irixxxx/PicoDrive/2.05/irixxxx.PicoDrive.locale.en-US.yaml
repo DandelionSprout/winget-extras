@@ -6,7 +6,7 @@ PackageVersion: "2.05"
 PackageName: PicoDrive
 Publisher: irixxxx
 PackageUrl: https://github.com/irixxxx/picodrive
-License: Custom open-source
+License: BSD-3-Clause
 LicenseUrl: https://raw.githubusercontent.com/irixxxx/picodrive/refs/heads/master/COPYING
 ShortDescription: It can run games developed for most consumer hardware released by SEGA, up to and including the 32X.
 Moniker: picodrive
