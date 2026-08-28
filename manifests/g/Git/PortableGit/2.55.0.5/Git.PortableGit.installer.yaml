@@ -19,6 +19,5 @@ Installers:
   Dependencies:
     PackageDependencies:
     - PackageIdentifier: Microsoft.DotNet.Framework.Runtime
-InstallLocationRequired: true
 ManifestType: installer
 ManifestVersion: 1.12.0
