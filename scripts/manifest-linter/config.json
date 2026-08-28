@@ -37,6 +37,7 @@
 			"manifests/m/Microsoft/IISExpress": "discontinued",
 			"manifests/m/Microsoft/Kusto/Explorer": "selfhosted, ClickOnce deployment with no standalone download",
 			"manifests/m/Microsoft/Scribble": "discontinued",
+			"manifests/m/Microsoft.SystemCenter.ServiceManager.Backup": "installer urls do not have text patterns identifiable as version numbers, yet are not static",
 			"manifests/m/Microsoft/UI/Xaml/2/0": "discontinued",
 			"manifests/m/Microsoft/UI/Xaml/2/1": "discontinued",
 			"manifests/m/Microsoft/UI/Xaml/2/2": "discontinued",
