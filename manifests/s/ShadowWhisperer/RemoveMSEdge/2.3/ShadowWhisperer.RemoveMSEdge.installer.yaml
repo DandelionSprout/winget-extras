@@ -4,7 +4,6 @@ PackageIdentifier: ShadowWhisperer.RemoveMSEdge
 PackageVersion: '2.3'
 InstallerType: portable
 ReleaseDate: 2025-12-11
-ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/ShadowWhisperer/Remove-MS-Edge/releases/download/2.3/Remove-Edge.exe
