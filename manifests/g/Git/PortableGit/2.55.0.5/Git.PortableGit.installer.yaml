@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.55.0.5
+ReleaseDate: 2026-08-20
+InstallerType: exe
+InstallerSwitches:
+  Silent: -y
+  SilentWithProgress: -y
+  InstallLocation: -o"<INSTALLPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-64-bit.7z.exe
+  InstallerSha256: 5AA8A20F6E9ABB2C755F0E73C91C687701A46B309AD84A0CA6509380FA4AE290
+- Architecture: arm64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-arm64.7z.exe
+  InstallerSha256: 49D1DD3158017FA9805D07268433DBAB7021B2EC1C1CC3FBABAF8B8255764DD0
+  ElevationRequirement: elevationRequired
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.DotNet.Framework.Runtime
+InstallLocationRequired: true
+ManifestType: installer
+ManifestVersion: 1.12.0
