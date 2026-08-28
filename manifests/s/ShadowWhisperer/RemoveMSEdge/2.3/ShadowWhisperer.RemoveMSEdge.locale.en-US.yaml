@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ShadowWhisperer.RemoveMSEdge
+PackageVersion: '2.3'
+PackageLocale: en-US
+Publisher: ShadowWhisperer
+PackageName: Remove-MS-Edge
+PackageUrl: https://github.com/ShadowWhisperer/Remove-MS-Edge
+License: CC0-1.0
+ShortDescription: Uninstall Microsoft Edge.
+Moniker: remove-ms-edge
+Tags:
+- microsoft-edge-remover
+- microsoft-edge-uninstaller
+- remove-edge
+- remove-microsoft-edge
+- uninstall-edge
+- uninstall-microsoft-edge
+- uninstall-ms-edge
+InstallationNotes: Removing Edge may cause Windows update failure loops. If this occurs, re-install Edge, install all Windows updates, then remove Edge again.
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

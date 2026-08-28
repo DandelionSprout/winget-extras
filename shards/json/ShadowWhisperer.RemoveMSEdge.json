@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "ShadowWhisperer",
+		"repo": "Remove-MS-Edge"
+	},
+	"urls": [
+		"https://github.com/ShadowWhisperer/Remove-MS-Edge/releases/download/{version}/Remove-Edge.exe"
+	]
+}
