@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: loganmc10
 PackageName: Gopher64
 PackageUrl: https://github.com/gopher64/gopher64/releases
-License: GPLv3
+License: GPL-3.0-or-later
 ShortDescription: A highly compatible N64 emulator.
 Moniker: gopher64
 Tags:
