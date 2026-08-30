@@ -7,6 +7,6 @@
 	},
 	"urls": [
 		"https://github.com/gopher64/gopher64/releases/download/v{version}/gopher64-windows-x86_64.exe",
-        "https://github.com/gopher64/gopher64/releases/download/v{version}/gopher64-windows-aarch64.exe"
+		"https://github.com/gopher64/gopher64/releases/download/v{version}/gopher64-windows-aarch64.exe"
 	]
 }
