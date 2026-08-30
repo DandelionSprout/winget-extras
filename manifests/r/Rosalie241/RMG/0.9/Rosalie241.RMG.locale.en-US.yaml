@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: Rosalie241
 PackageName: Rosalie's Mupen GUI
 PackageUrl: https://github.com/Rosalie241/RMG
-License: GPLv3
+License: GPL-3.0-or-later
 ShortDescription: A mupen64plus front-end written in C++. It offers a simple-to-use user interface.
 Moniker: rmg
 Tags:
