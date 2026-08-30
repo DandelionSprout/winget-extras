@@ -22,5 +22,6 @@ Installers:
   ProductCode: '{5BC0774B-3D6F-41BB-82FE-9D042D016C3B}'
   AppsAndFeaturesEntries:
   - ProductCode: '{5BC0774B-3D6F-41BB-82FE-9D042D016C3B}'
+    UpgradeCode: '{974BC83E-5C25-4F72-8B86-B9C0E28B26FA}'
 ManifestType: installer
 ManifestVersion: 1.12.0
