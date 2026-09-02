@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: OpenVPN, Inc.
 PackageName: TAP-Windows
 PackageUrl: https://build.openvpn.net/downloads/releases/
-License: Mostly GPLv2
+License: GPL-2.0-or-later
 LicenseUrl: https://raw.githubusercontent.com/OpenVPN/tap-windows6/refs/heads/master/COPYING
 ShortDescription: An NDIS implementation of the TAP-Windows driver, used by OpenVPN and other apps.
 Moniker: tap-windows
