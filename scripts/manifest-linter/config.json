@@ -49,6 +49,7 @@
 			"manifests/m/Microsoft/VCRedist/2012/arm32": "discontinued",
 			"manifests/m/Microsoft/VCRedist/2013/arm32": "discontinued",
 			"manifests/m/Microsoft/VCRedist/2015+/arm32": "discontinued",
+			"manifests/m/Microsoft/VSTOR/LanguagePack": "discontinued",
 			"manifests/m/Microsoft/VisualStudio/TeamExplorer": "discontinued",
 			"manifests/m/Microsoft/WindowsSDK/AppVerifier": "selfhosted, shipped inside the Windows SDK ISO",
 			"manifests/m/Microsoft/WindowsSDK/BuildTools": "nuget.org serves the package as .nupkg, an extension komac rejects for installer analysis",
