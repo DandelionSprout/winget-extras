@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.LTS
+PackageVersion: "582.66"
+PackageLocale: nb
+PackageName: NVIDIA GeForce sikkerhetsoppdateringsgrafikkdriver (for 10x0-/9x0-/750-/745-kort)
+PackageUrl: https://www.nvidia.com/en-eu/geforce/drivers/
+License: Freeware
+ShortDescription: Drivere for NVIDIAs 10x0-, 9x0-, 750- og 745-skjermkortserier.
+Description: |-
+  Grafikk- og lyddrivere for NVIDIAs 10x0-, 9x0-, 750-, 745-, TITAN X-, TITAN Xp-, og TITAN V-serier med skjermkort for stasjonære PC-er.
+
+  Slik som med den vanlige NVIDIA-driverinstallereren, vil skjermene blinke én gang når installasjonen er fullført.
+
+  «winget update» vil mest sannsynlig påstå at den vanlige «Nvidia.Driver.GeForceGameReady»-pakken er en oppdatering for denne pakken. Det er i så fall en falsk alarm.
+Tags:
+- nvidia-skjermkortdriver
+- nvidiaskjermkortdriver
+- nvidia-gpu-driver
+- nvidiagpudriver
+- nvidia-grafikkdriver
+- nvidiagrafikkdriver
+- nvidia-driver-for-hd-lyd
+- nvidiadriverforhdlyd
+- nvidia-gpu-er
+- nvidiagpuer
+- nvidia-geforce-game-ready-driver
+- nvidiageforcegamereadydriver
+- nvidia-driver
+- nvidiadriver
+- nv_dispi.inf
+- nvhda.inf
+Documentations:
+- DocumentLabel: Info om parametere
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: locale
+ManifestVersion: 1.12.0
