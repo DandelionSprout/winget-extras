@@ -7,7 +7,7 @@ Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Security Update Driver (10x0/9x0/750/745 cards)
 PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
-Copyright: © 2011-2026 NVIDIA Corporation
+Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Drivers for NVIDIA series 10x0, 9x0, 750 and 745 graphics cards.
 Description: |-
   Graphics and audio drivers for NVIDIA series 10x0, 9x0, 750, 745, TITAN X, TITAN Xp, and TITAN V desktop graphics cards.
