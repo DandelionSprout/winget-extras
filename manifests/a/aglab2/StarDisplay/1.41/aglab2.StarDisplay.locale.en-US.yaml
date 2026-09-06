@@ -11,11 +11,16 @@ Copyright: © aglab2 2025.
 ShortDescription: A tool that reads Super Mario 64 game memory to display acquired Stars, Keys, and Caps during casual playthroughs, highlighting the current level.
 Moniker: stardisplay
 Tags:
-- mario
-- mario-64
-- overlay
-- romhack
+- star-display
+- super-mario-64
+- supermario64
+- game-overlay
+- romhacks
 - sm64
-- speedrun
+- speedrunning
+- nintendo-64
+- nintendo64
+- n64
+- level-select
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
