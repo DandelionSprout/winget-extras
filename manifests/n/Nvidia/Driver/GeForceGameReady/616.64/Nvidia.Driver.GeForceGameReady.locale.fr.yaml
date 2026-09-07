@@ -4,7 +4,7 @@ PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: '616.64'
 PackageLocale: fr
 PackageName: NVIDIA Pilote GeForce Game Ready
-PackageUrl: https://www.nvidia.com/fr-fr/drivers/details/278431/
+PackageUrl: https://www.nvidia.com/fr-fr/drivers/details
 Tags:
 - nvidia-pilote-geforce-game-ready
 - nvidiapilotegeforcegameready
