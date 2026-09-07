@@ -18,8 +18,6 @@ Description: |-
   Maxwell, Pascal and Volta cards are on the R580 branch and are packaged separately as Nvidia.Driver.GeForceGameReady.R580. Older architectures have their own .R470, .R418, .R390 and .R340 packages.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
-
-  Despite several attempts to make this Winget package detectable with «winget update», no such method has been found yet.
 Moniker: nvidiadriver
 Tags:
 - nv_dispi.inf
