@@ -5,7 +5,7 @@ PackageLocale: en-US
 Publisher: Lubos Hasko
 PackageName: Manager Server
 PackageUrl: https://www.manager.io/server-edition
-License: FSL-1.1-Apache-2.0
+License: Apache-2.0
 LicenseUrl: https://raw.githubusercontent.com/Manager-io/Manager/main/LICENSE.md
 ShortDescription: This is the most comprehensive free accounting software. It has all the features you'd expect from an accounting package and we are working on adding even more.
 Moniker: managerserver
