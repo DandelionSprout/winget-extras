@@ -3,6 +3,7 @@
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: '616.64'
 PackageLocale: es-MX
+PackageName: NVIDIA Driver GeForce Game Ready
 PackageUrl: https://www.nvidia.com/es-la/drivers/
 Tags:
 - nvidia-driver-geforce-game-ready
