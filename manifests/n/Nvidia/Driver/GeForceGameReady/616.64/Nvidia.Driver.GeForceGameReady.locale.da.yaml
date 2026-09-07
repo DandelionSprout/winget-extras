@@ -6,7 +6,6 @@ PackageVersion: '616.64'
 PackageLocale: da
 PackageName: NVIDIA GeForce «Game Ready» skærmdriver
 PackageUrl: https://www.nvidia.com/en-eu/drivers/details/272788/
-License: Freeware
 ShortDescription: Drivere for NVIDIA-skærmkort.
 Description: |-
   Grafik- og lyddrivere for NVIDIA-skærmkort.
