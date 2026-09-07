@@ -11,7 +11,7 @@ PackageName: NVIDIA App
 PackageUrl: https://www.nvidia.com/en-us/software/nvidia-app/
 License: Freeware
 LicenseUrl: https://www.nvidia.com/en-us/drivers/nvidia-license/
-Copyright: © 2011-2025 NVIDIA Corporation.
+Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: A companion for NVIDIA-using PC gamers and creators. Optimize games and apps with a new unified GPU control center, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
 Description: |-
   A companion for NVIDIA-using PC gamers and creators. Optimize games and apps with a new unified GPU control center, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
@@ -21,15 +21,17 @@ Description: |-
   An NVIDIA GPU is required: on a machine without one the installer exits with 0xE6000000, which this manifest maps to systemNotSupported.
 Moniker: nvidiaapp
 Tags:
+- nvidia-app
+- nvidia-geforce
 - dlss
-- drivers
+- nvidia-drivers
 - gaming
-- geforce
-- gpu
-- graphics
-- nvidia
+- nvidia-geforce
+- nvidia-gpu
+- nvidia-graphics
 - optimization
-- recording
-- rtx
+- screen-recording
+- nvidia-rtx
+- xp8clzl93f5z4p
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
