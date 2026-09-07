@@ -6,7 +6,6 @@ PackageVersion: '616.64'
 PackageLocale: da
 PackageName: NVIDIA GeForce «Game Ready» skærmdriver
 PackageUrl: https://www.nvidia.com/en-eu/drivers/details/272788/
-License: Freeware
 ShortDescription: Drivere for NVIDIA-skærmkort.
 Description: |-
   Grafik- og lyddrivere for NVIDIA-skærmkort.
@@ -16,8 +15,6 @@ Description: |-
   Maxwell-, Pascal- og Volta-kort er på R580-grenen og pakkes separat som Nvidia.Driver.GeForceGameReady.R580. Ældre arkitekturer har deres egne .R470-, .R418-, .R390- og .R340-pakker.
 
   Som med den vanlige NVIDIA-driverinstallereren, vil skærmene blinke én gang, når installationen er fuldført.
-
-  Til trods for flere forsøk på at gøre den her Winget-pakken i stand til, at blive opdaget med «winget update», har ingen sådan metode blevet fundet endnu.
 Tags:
 - nv_dispi.inf
 - nvhda.inf
