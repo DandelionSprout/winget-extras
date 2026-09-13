@@ -25,7 +25,7 @@ Installers:
   UnsupportedOSArchitectures:
   - x64
 InstallerSuccessCodes:
-- '256'
+- 256
 AppsAndFeaturesEntries:
 - DisplayVersion: '03/19/2014 6.7.0.0'
 ManifestType: installer
