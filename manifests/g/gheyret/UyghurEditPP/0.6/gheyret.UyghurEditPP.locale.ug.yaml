@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: gheyret.UyghurEditPP
-PackageVersion: '0.82'
+PackageVersion: '0.6'
 PackageLocale: ug
 Publisher: gheyret
 PackageName: UyghurEdit++
@@ -30,5 +30,6 @@ Tags:
 - ئۇيغۇرچە ئىملا تەكشۈرۈش
 - ئۇيغۇرچە-يېزىقلارنى-ئۆزگەرتىش
 - ئۇيغۇرەدىت++
+ReleaseNotes: 0.6 was the last version to support Windows 10 x86.
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
