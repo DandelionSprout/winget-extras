@@ -10,7 +10,7 @@ ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://smartsdr.flexradio.com/SmartSDR_v4.1.5_Installer.exe
-  InstallerSha256: 6C02EEF51DAFAD427C6FA2F58D35F9DF7008B9B8210DA796AD14014EF5F10B52
+  InstallerSha256: 73fc31dd9367d3a87d1734ce52b4b95b6e39d9db2c7fca3febfa4a4dd2db9f33
   ProductCode: '{03d6c1d7-5e14-4e89-a18c-1c01ed74cff5}_is1'
   AppsAndFeaturesEntries:
   - DisplayName: FlexRadio Systems SmartSDR v4.1.5
