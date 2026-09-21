@@ -3,10 +3,10 @@
 	"strategy": "github-release",
 	"github": {
 		"owner": "github",
-		"repo": "mona-sans",
+		"repo": "mona-sans"
 	},
 	"urls": [
 		"https://github.com/github/mona-sans/releases/download/{release}/mona-sans-variable-{release}.zip"
 	],
-    "versionRemove": "v"
+	"versionRemove": "v"
 }
