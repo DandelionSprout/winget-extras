@@ -10,7 +10,7 @@ NestedInstallerFiles:
 - RelativeFilePath: rubik-main\fonts\variable\Rubik-Italic[wght].ttf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://codeload.github.com/googlefonts/rubik/zip/refs/heads/main
+  InstallerUrl: https://github.com/googlefonts/rubik/archive/refs/heads/main.zip
   InstallerSha256: 8C261D1EE01794058C2D70FBC24F1FE13DD541DF9E2A840F9F28D7200302EC03
 ManifestType: installer
 ManifestVersion: 1.12.0
