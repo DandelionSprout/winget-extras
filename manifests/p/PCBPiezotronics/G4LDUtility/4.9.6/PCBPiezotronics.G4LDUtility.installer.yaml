@@ -18,7 +18,7 @@ Installers:
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%\PCB Piezotronics\G4'
   AppsAndFeaturesEntries:
-  - ProductCode: {b56fd378-d0ce-4276-81be-0f3086d2581e}
+  - ProductCode: '{b56fd378-d0ce-4276-81be-0f3086d2581e}'
     UpgradeCode: '{BE747F75-777A-4B4E-AAB2-02DA78FD5D98}'
 - Architecture: x86
   InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x32.zip
