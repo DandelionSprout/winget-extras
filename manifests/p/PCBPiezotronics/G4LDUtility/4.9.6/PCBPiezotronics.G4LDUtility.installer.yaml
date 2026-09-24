@@ -12,7 +12,7 @@ InstallModes:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x64.zip
-  InstallerSha256: 
+  InstallerSha256: 793657b75b11df69ee03f2e8d145185e0c9054ce18efd5b862b4e7c85af53c8b
   NestedInstallerFiles:
   - RelativeFilePath: G4Setup_v4.9.6_x64.exe
   InstallationMetadata:
