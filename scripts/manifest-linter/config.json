@@ -69,7 +69,7 @@
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/g/gheyret/UKIJTuz": "discontinued",
-			"fonts/m/MichalSahar/MiriamLibre": "discontinued",
+			"fonts/m/MichalSahar/MiriamLibre/Variable": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued"
 		},
 		"repository/upstream-versions": {
