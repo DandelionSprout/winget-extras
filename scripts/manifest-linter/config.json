@@ -67,7 +67,6 @@
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
-			"fonts/i/impallari/Raleway": "discontinued",
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/g/gheyret/UKIJTuz": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued"
