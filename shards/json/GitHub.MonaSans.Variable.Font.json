@@ -6,6 +6,6 @@
 		"repo": "mona-sans"
 	},
 	"urls": [
-		"https://github.com/github/mona-sans/releases/download/v{release}/mona-sans-variable-v{release}.zip"
+		"https://github.com/github/mona-sans/releases/download/v{version}/mona-sans-variable-v{version}.zip"
 	]
 }
