@@ -5,6 +5,7 @@
 		"owner": "ArtifexSoftware",
 		"repo": "urw-base35-fonts"
 	},
+	"version": { "source": "fontVersion" },
 	"urls": [
 		"https://github.com/ArtifexSoftware/urw-base35-fonts/archive/refs/tags/{github.rawTag}.zip"
 	]
