@@ -4,7 +4,7 @@ PackageIdentifier: Apple.BootCamp.Service
 PackageVersion: 6.1.7866
 PackageLocale: nb
 PackageName: Boot Camp-tjeneste
-License: Gratisvare
+License: Gratis
 Description: |
   Hovedkjernen til Apple sitt Boot Camp-miljø, som kjører Windows på støttede x64-Mac-enheter.
 
