@@ -2,7 +2,7 @@
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: '617.14'
-PackageLocale: ko
+PackageLocale: tr
 PackageName: NVIDIA GeForce Game Ready Sürücüsü
 PackageUrl: https://www.nvidia.com/tr-tr/drivers/
 ManifestType: locale
