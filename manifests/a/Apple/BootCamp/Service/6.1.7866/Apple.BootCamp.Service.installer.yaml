@@ -12,9 +12,5 @@ Installers:
   InstallerUrl: https://archive.org/download/boot-camp-6.1.7866/BootCamp6.1.7866.zip
   InstallerSha256: BE870F94CBD53DC1BD0B4EC49C51C7CF3727B1D04AF27AC616890DAEDE7E0D74
 ElevationRequirement: elevationRequired
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: Apple.AppleSoftwareUpdate
-    MinimumVersion: 2.6.3.1
 ManifestType: installer
 ManifestVersion: 1.28.0
