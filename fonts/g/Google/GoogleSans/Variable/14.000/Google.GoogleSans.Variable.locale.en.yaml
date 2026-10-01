@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.GoogleSans.Variable
+PackageVersion: "14.000"
+PackageLocale: en
+Publisher: Google
+PackageName: Google Sans - Variable
+PackageUrl: https://github.com/googlefonts/googlesans
+License: OFL-1.1
+ShortDescription: A geometric sans-serif typeface used as Google's corporate branding typeface. Originally based off of Product Sans, the Google Sans design has been modified for more general purpose use across systems, product areas, advertising, and marketing.
+Moniker: googlesans
+Tags:
+- font
+- google-sans
+- google-branding
+- googlebranding
+- freetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
