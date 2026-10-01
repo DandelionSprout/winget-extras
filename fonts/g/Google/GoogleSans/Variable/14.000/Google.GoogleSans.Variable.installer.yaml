@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
-PackageIdentifier: Google.GoogleSans.Variable
+PackageIdentifier: Google.Sans
 PackageVersion: "14.000"
 ReleaseDate: 2026-06-10
 InstallerType: zip
