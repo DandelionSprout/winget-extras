@@ -25,7 +25,6 @@ UpgradeBehavior: install
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
-    MinimumVersion: 10.0.12
 Installers:
 - Architecture: x64
   InstallerUrl: https://dl.dell.com/FOLDER15013494M/2/Dell-Command-Update-for-Win32_WYJ59_WIN64_5.7.2_A00.EXE
