@@ -6,8 +6,13 @@ PackageVersion: 2.1.003
 PackageLocale: en-US
 Publisher: Praetox Technologies
 PackageName: High Orbit Ion Cannon
-License: Freeware
+PackageUrl: https://sourceforge.net/projects/high-orbit-ion-cannon/
+License: Public Domain
 ShortDescription: High Orbit Ion Cannon
 Moniker: hoic
+Tags:
+- high-orbit-ion-cannon
+- highorbitioncannon
+- network-stress-testing
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0
