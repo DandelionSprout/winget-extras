@@ -12,6 +12,11 @@ License: Proprietary
 LicenseUrl: https://www.auslogics.com/en/eula/
 Copyright: © 2008-2025 Auslogics Labs Pty Ltd.
 ShortDescription: Disk defragmentation and optimization utility.
+Tags:
+- auslogics-disk-defrag-ultimate
+- auslogicsdiskdefragultimate
+- defragmentation
+- defragmenting
 Moniker: disk-defrag-ultimate
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
