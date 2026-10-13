@@ -12,6 +12,10 @@ PackageUrl: https://github.com/cjmurph/PmsService
 License: MIT
 LicenseUrl: https://github.com/cjmurph/PmsService
 ShortDescription: Runs Plex Media Server as a Windows service.
+Tags:
+- plex-media-server-service-wrapper
+- pmsservice
+- requires-interactive-installation
 ReleaseNotes: |-
   Improved updater handling. now actually works.
   Thanks @chrisdecker08
