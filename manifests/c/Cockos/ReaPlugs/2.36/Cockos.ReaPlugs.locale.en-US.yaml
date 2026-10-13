@@ -11,7 +11,12 @@ PackageName: ReaPlugs
 PackageUrl: https://www.reaper.fm/reaplugs/
 License: Freeware
 LicenseUrl: https://www.reaper.fm/reaplugs/
-ShortDescription: Cockos VST plug-in bundle
+ShortDescription: Cockos VST plug-in bundle.
 Moniker: reaplugs
+Tags:
+- cockos-vst-plug-in-bundle
+- cockos-vst-plugin-bundle
+- reaplugs-vst-fx-suite
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
