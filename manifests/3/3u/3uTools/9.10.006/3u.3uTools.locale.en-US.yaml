@@ -1,4 +1,3 @@
-# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: 3u.3uTools
@@ -13,5 +12,9 @@ License: Proprietary
 LicenseUrl: https://www.3u.com/
 ShortDescription: 'Manages iOS devices: files, firmware and backups'
 Moniker: 3utools
+Tags:
+- ios-devices
+- iphone
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
