@@ -12,8 +12,8 @@ ShortDescription: A minimalist Sans Serif typeface, designed for both display an
 Moniker: mulish
 Tags:
 - font
-- sans-serif-font
 - minimalist-typeface
+- sans-serif-font
 - variable-font
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
