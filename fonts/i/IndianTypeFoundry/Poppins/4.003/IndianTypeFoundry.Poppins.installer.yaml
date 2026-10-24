@@ -26,7 +26,7 @@ NestedInstallerFiles:
 - RelativeFilePath: Poppins-ThinItalic.otf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://github.com/itfoundry/Poppins/raw/be5b80d711415eccf6b65aad15bced8bbb6a67a2/products/Poppins-4.003-GoogleFonts-OTF.zip
+  InstallerUrl: https://github.com/itfoundry/Poppins/raw/v4.003/products/Poppins-4.003-GoogleFonts-OTF.zip
   InstallerSha256: 3A1A58CFC497B3A57A8A6EC51D62800AD42A50B9827B1E3297135BF5E860B1A0
 ManifestType: installer
 ManifestVersion: 1.28.0
