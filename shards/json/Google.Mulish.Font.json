@@ -9,7 +9,8 @@
 	"version": { "source": "fontVersion" },
 	"urls": [
 		{
-			"url": "https://github.com/googlefonts/mulish/archive/{github.commit}.zip"
+			"url": "https://github.com/googlefonts/mulish/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/variable/Mulish"]
 		}
 	],
 	"state": { "source": "value", "value": "{github.commit}" }
