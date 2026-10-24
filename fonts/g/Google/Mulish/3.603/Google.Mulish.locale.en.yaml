@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
-PackageIdentifier: LeBailly.Mulish
+PackageIdentifier: Google.Mulish
 PackageVersion: "3.603"
 PackageLocale: en
-Publisher: Jacques and Allison Le Bailly
+Publisher: Google Fonts
+Author: Vernon Adams, Cyreal, Jacques Le Bailly
 PackageName: Mulish - Variable
 PackageUrl: https://github.com/googlefonts/mulish
 License: OFL-1.1

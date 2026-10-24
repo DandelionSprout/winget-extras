@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
-PackageIdentifier: LeBailly.Mulish
+PackageIdentifier: Google.Mulish
 PackageVersion: "3.603"
 DefaultLocale: en
 ManifestType: version
