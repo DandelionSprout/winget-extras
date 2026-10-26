@@ -18,6 +18,11 @@ package manager if it is missing.
 Find every Windows installer for the version (all architectures, scopes, etc), and pass them all in one `--urls`, so a
 single manifest carries every installer.
 
+For fonts, prefer the designer's or foundry's own versioned download and use their identifier.
+Use `Google.<Family>` only when the font is served from the `googlefonts` or `notofonts` GitHub
+orgs, with `Publisher: Google Fonts` and the designers from the family's `METADATA.pb` in
+google/fonts as `Author`. Don't add a family that is already packaged from another source.
+
 ## 3. Generate manifests
 
 From the repo root:
@@ -45,6 +50,15 @@ every `--urls` entry to hash it: `releases/download/...` resolves for any public
 `/archive/*.zip`, `raw.githubusercontent.com` and the GitHub API return `403` for repos outside
 the session's scope, and `add_repo` does not change that. Prefer a release asset. If the
 installer can't be downloaded, stop - never invent a hash.
+
+Try silent install first. Don't set `InstallModes: [interactive]` on a guess, or because
+winget-pkgs validation failed or labelled the installer interactive-only: this repo's CI runs
+differently. Identify the framework (Inno, NSIS, InstallShield, WiX/Burn, Qt IFW, InstallBuilder,
+Squirrel, vendor self-extractor) and find its silent switches from its docs, `strings` and
+`strings -el` on the binary or its embedded ini, and sibling packages here and in winget-pkgs.
+Push them and read the Validate log and the screenshot comment on the PR. Fall back to
+interactive only when CI shows a prompt or gate no switch skips, and put the framework, the
+switches tried and what CI showed in the PR body.
 
 ## 4. Add a shard
 

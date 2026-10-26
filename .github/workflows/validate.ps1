@@ -29,8 +29,6 @@ function Close-StartMenu {
     Start-Sleep 1
 }
 
-& "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
-
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
@@ -41,7 +39,7 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
 
-$manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+$manifest = yq -o=json $ManifestPath | ConvertFrom-Json
 
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
@@ -109,6 +107,11 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+if ($expectTimeout -and ($selectedInstaller.Dependencies ?? $manifest.Dependencies)) {
+    # --interactive also applies to dependencies, so install them silently first
+    $dependencyArgs = $wingetArgs + '--dependencies-only', '--silent'
+    $wingetArgs += '--skip-dependencies'
+}
 $wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
@@ -116,13 +119,25 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
+function Use-ExtrasSource {
+    # Resolve dependencies that only exist in our source
+    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source remove --name winget
+}
+if ($dependencyArgs) {
+    winget @dependencyArgs
+    if ($LASTEXITCODE) {
+        Use-ExtrasSource
+        winget @dependencyArgs
+    }
+    if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
+}
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
 if ($success -and $installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
-    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-    winget source remove --name winget
+    Use-ExtrasSource
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
     $success = $installer.WaitForExit(5 * 60 * 1000)
 }
@@ -142,6 +157,12 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    # APPINSTALLER_CLI_ERROR_NO_APPLICABLE_INSTALLER, as winget filters out installers whose
+    # UnsupportedOSArchitectures lists the runner's OS, e.g. an x86-only installer on x64
+    if ($installer.ExitCode -eq -1978335216 -and @($selectedInstaller.UnsupportedOSArchitectures ?? $manifest.UnsupportedOSArchitectures) -contains $env:RUNNER_ARCH.ToLower()) {
+        Write-Host "No applicable installer, as the manifest marks $($env:RUNNER_ARCH.ToLower()) unsupported"
+        return
+    }
     # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
     if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
         Write-Host 'Install reported the system is not supported, as the manifest declares'
