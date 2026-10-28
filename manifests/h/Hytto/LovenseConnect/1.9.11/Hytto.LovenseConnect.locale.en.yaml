@@ -7,7 +7,7 @@ PackageLocale: en
 Publisher: Hytto Ltd.
 PackageName: Lovense Connect
 License: Proprietary
-ShortDescription: A compatibility layer to connect Lovense devices to livestream setups consisting of the Stream Master web browser (or their Lovense Cam Extension Chromium extension), livestream tools, and the Lovense USB Bluetooth Adapter.
+ShortDescription: A compatibility layer to connect Lovense devices to livestream setups consisting of the Stream Master web browser (or the Lovense Cam Extension Chromium extension), livestream tools, and the Lovense USB Bluetooth Adapter.
 Moniker: lovense-connect
 Tags:
 - lovense-remote-control
