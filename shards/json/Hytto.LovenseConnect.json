@@ -2,10 +2,10 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": { "source": "product" },
-	"urls": ["https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe"],
+	"urls": ["https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe?v=5000"],
 	"state": {
 		"source": "response-header",
-		"url": "https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe",
+		"url": "https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe?v=5000",
 		"header": "last-modified"
 	},
 	"replace": true
