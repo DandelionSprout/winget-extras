@@ -28,5 +28,6 @@ Tags:
 - zenlesszonezero
 - zenless-zone-zero
 - zzz
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
