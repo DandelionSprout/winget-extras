@@ -13,6 +13,6 @@ ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe?v=5000
-  InstallerSha256: 334f58bc0dabbf2538e8219f26fd46cff15cc1d5c527e2847470c737f8e099b3
+  InstallerSha256: edbbfbb11cfe2ddef9d8e8c8fd0ee5e8395934c0694b3b5dab78bcac66705ffe
 ManifestType: installer
 ManifestVersion: 1.28.0
