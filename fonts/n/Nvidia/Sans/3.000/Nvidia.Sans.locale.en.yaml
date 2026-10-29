@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Sans
-PackageVersion: "3.000"
+PackageVersion: '3.000'
 PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA Sans
@@ -11,9 +11,9 @@ LicenseUrl: https://github.com/NVIDIA-RTX/RTXGI-Assets/blob/main/Fonts/NVIDIASan
 ShortDescription: The font used by NVIDIA in many of its softwares.
 Moniker: nvidiasans
 Tags:
-- nvidia-sans
 - font
-- truetype
+- nvidia-sans
 - nvidiasans_rg.ttf
+- truetype
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
