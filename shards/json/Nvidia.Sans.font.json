@@ -9,7 +9,7 @@
 	"version": { "source": "fontVersion" },
 	"urls": [
 		{
-			"url": "https://raw.githubusercontent.com/NVIDIA-RTX/RTXGI-Assets/{github.commit}/Fonts/NVIDIASans/NVIDIASans_Rg.ttf"
+			"url": "https://github.com/NVIDIA-RTX/RTXGI-Assets/raw/{github.commit}/Fonts/NVIDIASans/NVIDIASans_Rg.ttf"
 		}
 	],
 	"state": { "source": "value", "value": "{github.commit}" }
