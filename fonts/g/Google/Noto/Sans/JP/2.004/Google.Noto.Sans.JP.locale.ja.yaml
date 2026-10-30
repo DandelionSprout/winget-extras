@@ -6,12 +6,12 @@ PackageLocale: ja
 Tags:
 - noto-sans-日本語
 - notosans日本語
-- 日本語の表記体系
-- 日本語の表記體系
+- しょたい
 - にほんごのひょうきたいけい
 - ニホンゴノヒョウキタイケイ
 - フォント
+- 日本語の表記体系
+- 日本語の表記體系
 - 書体
-- しょたい
 ManifestType: locale
 ManifestVersion: 1.28.0
