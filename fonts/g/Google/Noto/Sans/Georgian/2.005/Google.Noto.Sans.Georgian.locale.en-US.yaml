@@ -19,8 +19,8 @@ Description: Noto Sans Georgian is part of Noto, a collection of high-quality fo
 Moniker: noto-sans-georgian
 Tags:
 - font
-- fonts
-- noto
+- noto-sans-georgian
+- notosansgeorgian
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/georgian/releases/tag/NotoSansGeorgian-v2.005
 ManifestType: defaultLocale
