@@ -10,5 +10,24 @@ PackageUrl: https://p.eagate.573.jp/game/eacloud/p/common/install.html
 License: Proprietary
 ShortDescription: Tool for Konami Amusement Game Station (e-Amusement / Konast), a service for pay-per-play ports of Konami arcade games.
 Moniker: konast
+- konami-amusement-game-station
+- konamiamusementgamestation
+- konami-e-amusement
+- konamieamusement
+- pay-per-play-arcade-ports
+- videogames
+- pop'n-music-lively
+- dance-dance-revolution-grand-prix
+- bombergirl
+- beatmania-iidx-infinitas
+- quizknock-stadium
+- gitadora
+- sound-voltex-exceed-gear
+- mah-jong-fight-club-union
+- tenkaichi-shogikai-2
+- requires-interactive-installation
+Documentation:
+- DocumentLabel: List of games
+  DocumentUrl: https://p.eagate.573.jp/game/eacloud/p/video/video_top.html
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
