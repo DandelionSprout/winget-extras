@@ -19,8 +19,7 @@ Description: Noto Sans Bengali is part of Noto, a collection of high-quality fon
 Moniker: noto-sans-bengali
 Tags:
 - font
-- fonts
-- noto
+- notosansbengali
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/bengali/releases/tag/NotoSansBengali-v3.011
 ManifestType: defaultLocale
