@@ -1,5 +1,5 @@
 # Created by Anthelion using komac v2.17.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
 PackageIdentifier: Google.Noto.Serif.Bengali
 PackageVersion: '3.000'
@@ -12,5 +12,5 @@ Tags:
 - মৈতৈ
 - মেইতেই
 - ফন্ট
-ManifestType: defaultLocale
+ManifestType: locale
 ManifestVersion: 1.28.0
