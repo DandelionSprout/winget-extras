@@ -6,10 +6,10 @@ PackageVersion: '3.011'
 PackageLocale: bn
 PackageName: Noto Sans বাংলা
 Tags:
-- বাংলা
 - অসমীয়া
-- মৈতৈ
-- মেইতেই
 - ফন্ট
+- বাংলা
+- মেইতেই
+- মৈতৈ
 ManifestType: locale
 ManifestVersion: 1.28.0

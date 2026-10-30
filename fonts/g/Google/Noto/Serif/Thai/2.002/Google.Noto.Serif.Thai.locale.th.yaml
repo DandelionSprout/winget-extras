@@ -6,10 +6,10 @@ PackageVersion: '2.002'
 PackageLocale: th
 PackageName: Noto Serif ไทย
 Tags:
-- อักษรไทย
-- ภาษาไทยถิ่นใต้
-- ภาษาสยาม
-- ภาษาตามโพร
 - ฟอนต์
+- ภาษาตามโพร
+- ภาษาสยาม
+- ภาษาไทยถิ่นใต้
+- อักษรไทย
 ManifestType: locale
 ManifestVersion: 1.28.0

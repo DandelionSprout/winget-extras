@@ -8,10 +8,10 @@ PackageName: IBM Plex Sans ไทย
 Tags:
 - ibm-plex-sans-ไทย
 - ibmplexsansไทย
-- อักษรไทย
-- ภาษาไทยถิ่นใต้
-- ภาษาสยาม
-- ภาษาตามโพร
 - ฟอนต์
+- ภาษาตามโพร
+- ภาษาสยาม
+- ภาษาไทยถิ่นใต้
+- อักษรไทย
 ManifestType: locale
 ManifestVersion: 1.12.0
