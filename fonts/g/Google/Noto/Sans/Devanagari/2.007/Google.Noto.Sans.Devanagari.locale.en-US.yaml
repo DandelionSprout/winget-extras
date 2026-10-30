@@ -21,6 +21,12 @@ Tags:
 - font
 - google-noto-sans-devanagari
 - googlenotosansdevanagari
+- hindi
+- konkani
+- marathi
+- nepali
+- sanskrit
 - typeface
+- unicode-11.0
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
