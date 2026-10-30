@@ -19,8 +19,7 @@ Description: Noto Sans Thai is part of Noto, a collection of high-quality fonts 
 Moniker: noto-sans-thai
 Tags:
 - font
-- fonts
-- noto
+- notosansthai
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/thai/releases/tag/NotoSansThai-v2.002
 ManifestType: defaultLocale
