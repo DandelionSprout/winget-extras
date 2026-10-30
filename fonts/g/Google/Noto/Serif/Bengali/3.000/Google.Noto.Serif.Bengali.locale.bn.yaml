@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Bengali
+PackageVersion: '3.000'
+PackageLocale: bn
+PackageName: Noto Serif বাংলা
+Tags:
+- noto-serif-বাংলা
+- notoserifবাংলা
+- অসমীয়া
+- মৈতৈ
+- মেইতেই
+- ফন্ট
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
