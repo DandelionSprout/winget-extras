@@ -14,12 +14,12 @@ ShortDescription: Chipset drivers and utilities for AMD Ryzen processor platform
 Moniker: amd-chipset
 Tags:
 - amd-chipset-software
-- amdchipsetsoftware
 - amd-chipsets
-- amd-driver
-- amd-ryzen
 - amd-cpus
+- amd-driver
 - amd-processors
+- amd-ryzen
+- amdchipsetsoftware
 ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-CHIPSET-8-09-28-1124.html
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
