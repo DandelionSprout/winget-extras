@@ -5,8 +5,6 @@ PackageIdentifier: VB-Audio.VB-CABLE
 PackageVersion: 45.0.0
 InstallerType: zip
 NestedInstallerType: exe
-NestedInstallerFiles:
-- RelativeFilePath: VBCABLE_Setup_x64.exe
 InstallerSwitches:
   Silent: -i -h
   SilentWithProgress: -i
@@ -16,8 +14,15 @@ AppsAndFeaturesEntries:
 - ProductCode: VB:VBCABLE {87459874-1236-4469}
 ElevationRequirement: elevationRequired
 Installers:
+- Architecture: x64
+  InstallerUrl: https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip
+  InstallerSha256: B950E39F01AF1D04EA623C8F6D8EB9B6EA5C477C637295FABF20631C85116BFB
+  NestedInstallerFiles:
+  - RelativeFilePath: VBCABLE_Setup_x64.exe
 - Architecture: x86
   InstallerUrl: https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip
   InstallerSha256: B950E39F01AF1D04EA623C8F6D8EB9B6EA5C477C637295FABF20631C85116BFB
+  NestedInstallerFiles:
+  - RelativeFilePath: VBCABLE_Setup.exe
 ManifestType: installer
 ManifestVersion: 1.28.0
