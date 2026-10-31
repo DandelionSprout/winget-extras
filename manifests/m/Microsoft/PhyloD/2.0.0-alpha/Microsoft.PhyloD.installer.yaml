@@ -2,7 +2,6 @@
 
 PackageIdentifier: Microsoft.PhyloD
 PackageVersion: 2.0.0-alpha
-ReleaseDate: 2016-05-16
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
@@ -10,6 +9,7 @@ NestedInstallerFiles:
   PortableCommandAlias: distribute
 - RelativeFilePath: Release\PhyloShell.exe
   PortableCommandAlias: phyloshell
+ReleaseDate: 2016-05-16
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
