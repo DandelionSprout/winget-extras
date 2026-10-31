@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: strepto42.VirtualAC3Encoder
+PackageVersion: 0.1.5
+ReleaseDate: 2026-06-08
+InstallerType: inno
+ProductCode: '{B3D7F2A1-6C84-4E59-9A0F-2D7C1E8B4A60}_is1'
+AppsAndFeaturesEntries:
+- ProductCode: '{B3D7F2A1-6C84-4E59-9A0F-2D7C1E8B4A60}_is1'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/strepto42/virtual-ac3-encoder/releases/download/v0.1.5/virtual-ac3-encoder-setup-0.1.5.exe
+  InstallerSha256: D6721A9C70A26B65D3011DF46C0EAE253DD8FBCC302E18C44E719F1BB71145F7
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: VB-Audio.VB-CABLE
+ManifestType: installer
+ManifestVersion: 1.12.0
