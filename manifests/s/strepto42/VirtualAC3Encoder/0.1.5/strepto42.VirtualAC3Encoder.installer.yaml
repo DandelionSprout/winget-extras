@@ -19,7 +19,7 @@ Installers:
   ArchiveBinariesDependOnPath: true
   AppsAndFeaturesEntries:
   - DisplayName: Virtual AC3 Decoder (Portable)
-  InstallerUrl: https://github.com/strepto42/virtual-ac3-encoder/releases/download/v0.1.5/virtual-ac3-encoder-setup-0.1.5.exe
+  InstallerUrl: https://github.com/strepto42/virtual-ac3-encoder/releases/download/v0.1.5/virtual-ac3-encoder-0.1.5-win64.zip
   InstallerSha256: 6c85775c1e0da88b81d93d85afadd7db0bf423bb754bd07759289779b9e440a1
 Dependencies:
   PackageDependencies:
