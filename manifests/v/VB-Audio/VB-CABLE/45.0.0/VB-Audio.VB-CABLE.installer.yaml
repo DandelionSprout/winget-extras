@@ -12,6 +12,9 @@ InstallerSwitches:
   SilentWithProgress: -i
 ReleaseDate: 2025-12-05
 ElevationRequirement: elevationRequired
+ProductCode: 'VB:VBCABLE {87459874-1236-4469}'
+AppsAndFeaturesEntries:
+- ProductCode: 'VB:VBCABLE {87459874-1236-4469}'
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip
