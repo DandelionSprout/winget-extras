@@ -5,6 +5,5 @@
 		"url": "https://download.xnview.com/old_versions/XnRetro/",
 		"regex": "XnRetro-(\\d+(?:\\.\\d+)+)-win-x64\\.zip"
 	},
-	"urls": [
-		"https://download.xnview.com/old_versions/XnRetro/XnRetro-{version}-win-x64.zip"]
+	"urls": ["https://download.xnview.com/old_versions/XnRetro/XnRetro-{version}-win-x64.zip"]
 }
