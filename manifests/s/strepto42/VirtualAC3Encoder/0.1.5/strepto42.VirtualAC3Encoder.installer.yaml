@@ -14,7 +14,8 @@ Installers:
 - Architecture: x64
   InstallerType: zip
   NestedInstallerType: portable
-  NestedInstallerFiles: engine.exe
+  NestedInstallerFiles:
+  - RelativeFilePath: engine.exe
   ArchiveBinariesDependOnPath: true
   AppsAndFeaturesEntries:
   - DisplayName: Virtual AC3 Decoder (Portable)
