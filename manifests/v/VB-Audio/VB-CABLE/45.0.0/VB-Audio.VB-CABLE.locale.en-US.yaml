@@ -15,5 +15,6 @@ Tags:
 - vb-cable-virtual-audio-device
 - vbcablevirtualaudiodevice
 - vbmmecable64_win10.inf
+- vbmmecable_win7.inf
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
