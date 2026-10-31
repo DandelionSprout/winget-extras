@@ -1,6 +1,6 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": { "owner": "Microsoft", "repo": "PhyloD" },
+	"github": { "owner": "microsoft", "repo": "PhyloD" },
 	"urls": ["https://github.com/microsoft/PhyloD/releases/download/v{version}/Phylod.v{version}.zip"]
 }
